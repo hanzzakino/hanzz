@@ -1,0 +1,123 @@
+.intro_container {
+  /* background-color: red; */
+  width: 100%;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: absolute;
+  top: 25vh;
+}
+
+.intro_group1 {
+  /* background-color: yellow; */
+  display: flex;
+  flex-flow: row;
+}
+
+.intro_group1_img {
+  /* background-color: orange; */
+  height: 340px;
+  width: 300px;
+  margin-right: 80px;
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.92);
+}
+.intro_img_me {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 2;
+  height: 340px;
+}
+.intro_img_blue {
+  position: absolute;
+  top: 35px;
+  left: 16px;
+  z-index: 1;
+  height: 304px;
+}
+.intro_img_gray {
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  z-index: 0;
+  height: 304px;
+}
+
+.intro_group1_msg {
+  /* background-color: orange; */
+  height: 340px;
+  width: 600px;
+}
+
+.intro_group1_msg1 {
+  font-family: 'Poppins';
+  font-size: 3.4rem;
+  color: #272727;
+  line-height: 3.8rem;
+  margin-top: 1.5rem;
+}
+
+.intro_group1_msg2 {
+  font-family: 'Poppins';
+  font-size: 3.4rem;
+  color: #20bde8;
+  line-height: 3.8rem;
+}
+.intro_group1_msg2 i {
+  color: #fd5565;
+  font-style: normal;
+}
+
+.intro_group1_msg3 {
+  font-family: 'Source Sans Pro Semibold';
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 2.4rem;
+  color: #272727;
+}
+.intro_group1_msg3 b {
+  color: #20bde8;
+  font-family: 'Source Sans Pro Black';
+}
+.intro_group1_msg3 i {
+  color: #fd5565;
+  font-style: normal;
+}
+
+.intro_group1_social {
+  color: #272727;
+  margin-top: 2.6rem;
+  display: flex;
+  flex-flow: row;
+}
+.intro_group1_social i {
+  font-size: 1.5rem;
+}
+.intro_group1_social a {
+  margin-right: 42px;
+  transition: 0.2s;
+}
+.social_gt:hover {
+  color: black !important;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.social_fb:hover {
+  color: #1877f2 !important;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.social_tw:hover {
+  color: #1da1f2 !important;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
+.social_ml:hover {
+  color: black !important;
+  transform: scale(1.15);
+  transition: 0.2s;
+}
