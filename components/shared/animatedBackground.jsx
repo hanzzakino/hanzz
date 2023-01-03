@@ -4,15 +4,11 @@ import { useState, useEffect } from 'react'
 
 export default function AnimatedBackground({enableBlur=false}) {
   const { width } = useWindowDimensions()
-  const [numIsSet, setNumIsSet] = useState(false)
   const [shapeNumber,setShapeNumber] = useState()
   const animatedShapes = []
 
   useEffect(() => {
-    if(!numIsSet) {
-      setShapeNumber(Math.ceil((width/32)*2))
-      setNumIsSet(true)
-    }
+    setShapeNumber(Math.ceil((width/32)*2))
   },[width])
 
   for(let i=0; i<shapeNumber; i++){
@@ -50,7 +46,7 @@ export default function AnimatedBackground({enableBlur=false}) {
   return (
       <div className={styles.area} >
       <ul className={styles.circles}>
-        <h1>{shapeNumber} {animatedShapes.length}</h1>
+        {/* <h1>{shapeNumber} {animatedShapes.length}</h1> */}
 
           {animatedShapes}
       </ul>
