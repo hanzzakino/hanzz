@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       
-      <AnimatedBackground/>
+      <AnimatedBackground enableBlur/>
 
       <main className={styles.main_container}>
         <Introduction />

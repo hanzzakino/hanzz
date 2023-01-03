@@ -22,30 +22,34 @@
     position: absolute;
     display: block;
     list-style: none;
+
     width: 20px;
     height: 20px;
+    top: -30px;
+
     background: #e1e4e4;
+    opacity: 60%;
+
     animation: animate 25s linear infinite;
+    -webkit-animation: animate 25s linear infinite;
     animation-direction: alternate;
-    transition: 1s;
-    top: 120%;
+    -webkit-animation-direction: alternate;
 }
 
 
 @keyframes animate {
 
     0%{
-        top: 120%;
-        transform: rotate(0deg);
-        opacity: 60%;
-        border-radius: 0;
+        transform: translateY(0) rotate(0deg);
+        -webkit-transform: translateY(0) rotate(0deg);
+        /* opacity: 70%; */
+        
     }
 
     100%{
-        top: -20%;
-        transform: rotate(720deg);
-        opacity: 10%;
-        border-radius: 70%;
+        transform: translateY(180vh) rotate(720deg);
+        -webkit-transform:  translateY(180vh) rotate(720deg);
+        /* opacity: 20%; */
     }
 
 }
