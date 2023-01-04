@@ -26,9 +26,9 @@
     width: 20px;
     height: 20px;
     top: -30px;
+    border-radius: 50%;
 
     background: #e1e4e4;
-    opacity: 60%;
 
     animation: animate 25s linear infinite;
     -webkit-animation: animate 25s linear infinite;

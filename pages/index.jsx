@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       
-      <AnimatedBackground enableBlur/>
+      <AnimatedBackground speedMultiplier={0.8} opacity={0.24} maxBlur={6} enableBlur/>
 
       <main className={styles.main_container}>
         <Introduction />
