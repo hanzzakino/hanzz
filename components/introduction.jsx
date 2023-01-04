@@ -1,7 +1,6 @@
 import styles from '../styles/Introduction.module.css';
 
 export default function Introduction() {
-  console.log(styles)
   return (
     <div className={styles.introContainer}>
         <div className={styles.introGroup1}>
@@ -25,7 +24,6 @@ export default function Introduction() {
                 </div>
             </div>
         </div>
-        
     </div>
   )
 }

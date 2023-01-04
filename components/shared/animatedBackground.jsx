@@ -55,7 +55,7 @@ export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxB
   return (
       <div className={styles.area} >
       <ul className={styles.circles}>
-        <h1>{shapeNumber} </h1>
+        
 
           {animatedShapes}
       </ul>
