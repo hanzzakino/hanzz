@@ -1,10 +1,10 @@
 import '../styles/globals.css'
-import { WindowContextWrapper } from '../context/WindowContext.js' 
+import { SettingsContextWrapper } from '../context/SettingsContext.js' 
 function MyApp({ Component, pageProps }) {
   return(
-  <WindowContextWrapper>
+  <SettingsContextWrapper>
     <Component {...pageProps} />
-  </WindowContextWrapper>
+  </SettingsContextWrapper>
   )
 }
 

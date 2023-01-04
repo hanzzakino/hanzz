@@ -1,7 +1,5 @@
-.intro_container {
-  /* background-color: red; */
+.introContainer {
   width: 100%;
-
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -9,13 +7,13 @@
   top: 24vh;
 }
 
-.intro_group1 {
+.introGroup1 {
   /* background-color: yellow; */
   display: flex;
   flex-flow: row;
 }
 
-.intro_group1_img {
+.introGroup1_img {
   /* background-color: orange; */
   height: 340px;
   width: 300px;
@@ -24,21 +22,22 @@
   overflow: hidden;
   transform: scale(0.92);
 }
-.intro_img_me {
+.introGroup1_me {
   position: absolute;
   top: 0;
   left: 10%;
   z-index: 2;
   height: 340px;
 }
-.intro_img_blue {
+.introGroup1_blue {
   position: absolute;
   top: 35px;
   left: 16px;
   z-index: 1;
   height: 304px;
 }
-.intro_img_gray {
+.introGroup1_gray {
+  filter: opacity(0.7);
   position: absolute;
   top: 35px;
   left: 5px;
@@ -46,13 +45,13 @@
   height: 304px;
 }
 
-.intro_group1_msg {
+.introGroup1_msg {
   /* background-color: orange; */
   height: 340px;
   width: 600px;
 }
 
-.intro_group1_msg1 {
+.introGroup1_msg1 {
   font-family: 'Poppins';
   font-size: 3.4rem;
   color: #272727;
@@ -60,18 +59,18 @@
   margin-top: 1.5rem;
 }
 
-.intro_group1_msg2 {
+.introGroup1_msg2 {
   font-family: 'Poppins';
   font-size: 3.4rem;
   color: #20bde8;
   line-height: 3.8rem;
 }
-.intro_group1_msg2 i {
+.introGroup1_msg2 i {
   color: #fd5565;
   font-style: normal;
 }
 
-.intro_group1_msg3 {
+.introGroup1_msg3 {
   font-family: 'Source Sans Pro Semibold';
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -79,45 +78,89 @@
   line-height: 2.4rem;
   color: #272727;
 }
-.intro_group1_msg3 b {
+.introGroup1_msg3 b {
   color: #20bde8;
   font-family: 'Source Sans Pro Black';
 }
-.intro_group1_msg3 i {
+.introGroup1_msg3 i {
   color: #fd5565;
   font-style: normal;
 }
 
-.intro_group1_social {
+.introGroup1_social {
   color: #272727;
   margin-top: 2.6rem;
   display: flex;
   flex-flow: row;
 }
-.intro_group1_social i {
+.introGroup1_social i {
   font-size: 1.5rem;
 }
-.intro_group1_social a {
+.introGroup1_social a {
   margin-right: 42px;
   transition: 0.2s;
 }
-.social_gt:hover {
+.socialGT:hover {
   color: black !important;
   transform: scale(1.15);
   transition: 0.2s;
 }
-.social_fb:hover {
+.socialFB:hover {
   color: #1877f2 !important;
   transform: scale(1.15);
   transition: 0.2s;
 }
-.social_tw:hover {
+.socialTW:hover {
   color: #1da1f2 !important;
   transform: scale(1.15);
   transition: 0.2s;
 }
-.social_ml:hover {
+.socialML:hover {
   color: black !important;
   transform: scale(1.15);
   transition: 0.2s;
 }
+
+
+@media only screen and (max-width: 720px) {
+  .introContainer {
+    top: 4%;
+  }
+  .introGroup1 {
+    align-items: center;
+    flex-flow: column;
+  }
+  .introGroup1_img {
+    margin: 0;
+    transform: scale(0.85);
+    position: relative;
+    overflow: hidden;
+  }
+  .introGroup1_msg {
+    height: fit-content;
+    padding: 0 10% 0 10%;
+    width: 100%;
+  }
+  .introGroup1_msg1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-top: 0;
+  }
+  .introGroup1_msg2 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+  }
+  .introGroup1_msg3 {
+    margin-top: 1.4rem;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    line-height: 2rem;
+  }
+  .introGroup1_social {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  .introGroup1_social a {
+    margin: 24px;
+  }
+} 
