@@ -10,6 +10,7 @@ export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxB
 
   useEffect(() => {
     setShapeNumber(Math.ceil((screenWidth/32)*2))
+    
   },[windowAvailable])
 
   useEffect(() => {
@@ -24,6 +25,7 @@ export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxB
       tempanimatedShapes.push(
           <li 
           key={'ashape'+i}
+          className={styles.animationFallRotate}
           style={
             ({
               WebkitFilter: 'blur('+blurBySize+'px)',

@@ -30,8 +30,20 @@
 
     background: #e1e4e4;
 
-    animation: animate 25s linear infinite;
-    -webkit-animation: animate 25s linear infinite;
+}
+
+
+.animationFallRotate {
+    animation: fallRotate 25s linear infinite;
+    -webkit-animation: fallRotate 25s linear infinite;
+    animation-direction: alternate;
+    -webkit-animation-direction: alternate;
+}
+
+.animationFollowCurve1 {
+    offset: path("M 421 -105 C 92 13 -532 -257 -522 62 S 256 80 -434 438 S 400 529 -38 186 C -385 -143 675 -5 799 172 S 547 549.6667 1109 704 C 1353 757 1335 218 1113 21 S 482 -103 356 208 S 640 277 642 456 S 409 509 147 720 z") auto;
+    animation: move 25s linear infinite;
+    -webkit-animation: move 25s linear infinite;
     animation-direction: alternate;
     -webkit-animation-direction: alternate;
 }
@@ -39,7 +51,7 @@
 
 
 
-@keyframes animate {
+@keyframes fallRotate {
 
     0%{
         transform: translateY(0) rotate(0deg);
@@ -55,3 +67,12 @@
     }
 
 }
+
+@keyframes move {
+    from {
+        offset-distance: 0%;
+    }
+    to {
+        offset-distance: 100%;
+    }
+  }
