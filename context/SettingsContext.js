@@ -3,6 +3,8 @@ import { createContext, useContext, useState, useEffect  } from 'react'
 const SettingsContext = createContext()
 
 export const SettingsContextWrapper = ({children}) =>{
+
+    const [theme, setTheme] = useState('light')
     
     const hasWindow = typeof window !== 'undefined'
     const getWindowDimensions = () => {
@@ -28,7 +30,11 @@ export const SettingsContextWrapper = ({children}) =>{
 
     return (
         <SettingsContext.Provider value={
-            windowDimensions
+            ({
+                theme,
+                setTheme,
+                ...windowDimensions
+            })
         }>
             {children}
         </SettingsContext.Provider>

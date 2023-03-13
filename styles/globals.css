@@ -12,9 +12,20 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f6f9f9;
+  font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
   font-size: 16px;
+}
+.light {
+  /* background: rgb(227,234,238); */
+  background: #f6f9f9;
+  color: #272727;
+ 
+}
+
+.dark {
+  /* background: rgb(227,234,238); */
+  background: #13191d;
+  color: #c7dde2;
 }
 
 a {

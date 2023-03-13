@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import {useSettingsContext} from '../../context/SettingsContext'
 
 export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxBlur=6,enableBlur=false}) {
-  const { screenWidth, windowAvailable } = useSettingsContext()
+  const { screenWidth, windowAvailable, theme } = useSettingsContext()
   const [shapeNumber,setShapeNumber] = useState(0)
   const [animatedShapes, setAnimatedShapes] = useState()
 
@@ -39,7 +39,8 @@ export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxB
               height: randomSize.toString()+'px',
               animationDelay: ((1/speedMultiplier)*randomDelay).toString()+'s',
               animationDuration: ((1/speedMultiplier)*speedBySize.toString())+'s',
-              opacity: opacity.toString()
+              opacity: ( theme=='dark' ? opacity*0.24:opacity).toString(),
+              mixBlendMode: theme=='dark' ? 'lighten':'normal',
             })
           }
         >
@@ -55,7 +56,7 @@ export default function AnimatedBackground({speedMultiplier=1, opacity=0.3, maxB
 
 
   return (
-      <div className={styles.area} >
+      <div className={styles.area+' '+theme}>
       <ul className={styles.circles}>
         
 
