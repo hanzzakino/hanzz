@@ -1,11 +1,10 @@
-import { createContext, useContext, useState, useEffect  } from 'react'
+import { createContext, useContext, useState, useEffect } from 'react'
 
 const SettingsContext = createContext()
 
-export const SettingsContextWrapper = ({children}) =>{
-
+export const SettingsContextWrapper = ({ children }) => {
     const [theme, setTheme] = useState('light')
-    
+
     const hasWindow = typeof window !== 'undefined'
     const getWindowDimensions = () => {
         const screenWidth = hasWindow ? window.innerWidth : null
@@ -13,7 +12,7 @@ export const SettingsContextWrapper = ({children}) =>{
         return {
             screenWidth,
             screenHeight,
-            windowAvailable: hasWindow
+            windowAvailable: hasWindow,
         }
     }
     useEffect(() => {
@@ -26,16 +25,18 @@ export const SettingsContextWrapper = ({children}) =>{
             return () => window.removeEventListener('resize', handleResize)
         }
     }, [hasWindow])
-    const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
+    const [windowDimensions, setWindowDimensions] = useState(
+        getWindowDimensions()
+    )
 
     return (
-        <SettingsContext.Provider value={
-            ({
+        <SettingsContext.Provider
+            value={{
                 theme,
                 setTheme,
-                ...windowDimensions
-            })
-        }>
+                ...windowDimensions,
+            }}
+        >
             {children}
         </SettingsContext.Provider>
     )
