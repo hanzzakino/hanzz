@@ -6,9 +6,16 @@ import Navbar from '../components/navbar'
 import AnimatedBackground from '../components/shared/animatedBackground'
 import { useSettingsContext } from '../context/SettingsContext'
 import Skills from '../components/skills'
+import SectionIndicator from '../components/shared/sectionIndicator'
 
 export default function Home() {
     const { theme } = useSettingsContext()
+    const [sections, setSections] = useState({
+        currentSection: 0,
+        sectionList: ['Introduction', 'Skills', 'Projects', 'More...'],
+    })
+
+    const { currentSection, numberOfSections } = sections
 
     return (
         <div>
@@ -18,13 +25,13 @@ export default function Home() {
             </Head>
 
             <main className={styles.mainContainer + ' ' + theme}>
-                {/* <AnimatedBackground
+                <AnimatedBackground
                     speedMultiplier={0.9}
                     opacity={0.25}
                     maxBlur={6}
                     enableBlur
-                /> */}
-
+                />
+                <SectionIndicator sections={sections} />
                 <Introduction />
                 <Skills />
 
