@@ -25,13 +25,7 @@ export default function Introduction() {
                     />
                 </div>
                 <div className={styles.introGroup1_msg}>
-                    <h1
-                        className={
-                            styles.introGroup1_msg1 + ' ' + styles.typewriter
-                        }
-                    >
-                        Hi! I'm
-                    </h1>
+                    <h1 className={styles.introGroup1_msg1}>Hi! I'm</h1>
 
                     <h1 className={styles.introGroup1_msg2}>
                         Hanz Aquino<i>.</i>
