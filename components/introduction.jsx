@@ -1,6 +1,6 @@
 import styles from '../styles/Introduction.module.css'
 import { useSettingsContext } from '../context/SettingsContext'
-
+import { BsGithub, BsFacebook, BsTwitter, BsEnvelopeFill } from 'react-icons/bs'
 export default function Introduction() {
     const { theme } = useSettingsContext()
 
@@ -51,7 +51,7 @@ export default function Introduction() {
                             target="_blank"
                             className={styles.socialGT + ' ' + styles.tooltip}
                         >
-                            <i id="gt" className="bi bi-github"></i>
+                            <BsGithub style={{ fontSize: '1.5rem' }} />
                             {/* <span className={styles.tooltiptext}>GitHub</span> */}
                         </a>
                         <a
@@ -59,7 +59,8 @@ export default function Introduction() {
                             target="_blank"
                             className={styles.socialFB + ' ' + styles.tooltip}
                         >
-                            <i className="bi bi-facebook"></i>
+                            <BsFacebook style={{ fontSize: '1.5rem' }} />
+                            {/* <i className="bi bi-facebook"></i> */}
                             {/* <span className={styles.tooltiptext}>Facebook</span> */}
                         </a>
                         <a
@@ -67,14 +68,14 @@ export default function Introduction() {
                             target="_blank"
                             className={styles.socialTW + ' ' + styles.tooltip}
                         >
-                            <i className="bi bi-twitter"></i>
+                            <BsTwitter style={{ fontSize: '1.5rem' }} />
                             {/* <span className={styles.tooltiptext}>Twitter</span> */}
                         </a>
                         <a
                             href="mailto:hanzzakino@gmail.coom"
                             className={styles.socialML + ' ' + styles.tooltip}
                         >
-                            <i className="bi bi-envelope-fill"></i>
+                            <BsEnvelopeFill style={{ fontSize: '1.5rem' }} />
                             {/* <span className={styles.tooltiptext}>Email</span> */}
                         </a>
                     </div>
