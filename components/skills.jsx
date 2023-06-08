@@ -32,7 +32,7 @@ export default function Skills() {
         <div className={styles.container}>
             <div className={styles.titleContainer}>
                 <h1 className={styles.title}>
-                    Skills<i>.</i>
+                    About me<i>.</i>
                 </h1>
                 <div className={styles.intro}>
                     Driven by fascination and curiosity about how a computer
@@ -41,7 +41,7 @@ export default function Skills() {
             </div>
             <div className={styles.skillGroupContainer}>
                 <h1 className={styles.skillGroupTitle}>
-                    Programming Languages
+                    What I use to Program?
                 </h1>
                 <div className={styles.skillGroup}>
                     {skillList.programming.map((lang) => (
@@ -67,7 +67,9 @@ export default function Skills() {
             </div>
             <div className={styles.frameworksContainer}>
                 <div className={styles.skillGroupContainer}>
-                    <h1 className={styles.skillGroupTitle}>Web Frameworks</h1>
+                    <h1 className={styles.skillGroupTitle}>
+                        What I use to create a Website?
+                    </h1>
                     <div className={styles.skillGroup}>
                         {skillList.webFrameworks.map((framework) => (
                             <div
@@ -92,7 +94,7 @@ export default function Skills() {
                 </div>
                 <div className={styles.skillGroupContainer}>
                     <h1 className={styles.skillGroupTitle}>
-                        Desktop Frameworks
+                        What I use to create Desktop Applications?
                     </h1>
                     <div className={styles.skillGroup}>
                         {skillList.desktopFrameworks.map((framework) => (

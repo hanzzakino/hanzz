@@ -31,9 +31,9 @@ export default function Introduction() {
                         Hanz Aquino<i>.</i>
                     </h1>
                     <p className={styles.group1_msg3}>
-                        I'm a <b>Computer Engineer | Programmer</b> and I
-                        convert <i>ideas</i> and <i>creativity</i> into a piece
-                        of technology.
+                        <b>Computer Engineer | Programmer</b>
+                        <br />I convert <i>ideas</i> and <i>creativity</i> into
+                        a piece of technology.
                     </p>
                     <p className={styles.group1_msg4}>
                         Also, a&nbsp;
