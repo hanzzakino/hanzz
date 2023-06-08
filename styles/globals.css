@@ -22,8 +22,9 @@ body {
 
 .dark {
     /* background: rgb(227,234,238); */
-    background: #13191d;
-    color: #c7dde2;
+    background-color: rgb(3, 31, 44);
+    /* background: #13191d; */
+    color: #bacdd1;
 }
 
 a {

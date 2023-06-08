@@ -1,6 +1,7 @@
-.sectionIndicatorContainer {
+.container {
     height: 100%;
     position: fixed;
+    z-index: 2;
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -46,6 +47,11 @@
     /* position: absolute; */
     color: rgb(29, 161, 242);
     font-size: 0.75rem;
+}
+.unselectedIndicator {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+    opacity: 30%;
 }
 
 .leftLine {

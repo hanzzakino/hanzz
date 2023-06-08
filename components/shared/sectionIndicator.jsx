@@ -6,7 +6,7 @@ export default function SectionIndicator({ sections }) {
     const { theme } = useSettingsContext()
 
     return (
-        <div className={styles.sectionIndicatorContainer}>
+        <div className={styles.container}>
             {/* <div className={styles.leftLine2}></div> */}
             <div>
                 {sections.sectionList &&
@@ -21,8 +21,12 @@ export default function SectionIndicator({ sections }) {
                                     key={sectionTitle + '002'}
                                 />
                             ) : (
-                                <BsDiamond
-                                    className={styles.icon}
+                                <BsDiamondFill
+                                    className={
+                                        styles.icon +
+                                        ' ' +
+                                        styles.unselectedIndicator
+                                    }
                                     key={sectionTitle + '002'}
                                 />
                             )}
