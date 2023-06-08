@@ -30,7 +30,7 @@ export default function Home() {
                     speedMultiplier={0.9}
                     opacity={0.25}
                     maxBlur={6}
-                    enableBlur
+                    enableBlur={false}
                 /> */}
                 <SectionIndicator sections={sections} />
                 <Introduction />
