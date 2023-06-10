@@ -8,7 +8,8 @@
     justify-content: center;
     /* background-color: white; */
     animation: slowShow 1.2s ease-in;
-    margin-left: 3.6vw;
+    right: 0;
+    margin-right: 2vw;
 }
 
 /* @keyframes appearFromLeft {

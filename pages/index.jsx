@@ -12,7 +12,7 @@ import Projects from '../components/projects'
 export default function Home() {
     const { theme } = useSettingsContext()
     const [sections, setSections] = useState({
-        currentSection: 0,
+        currentSection: 1,
         sectionList: ['Introduction', 'Skills', 'Projects', 'More...'],
     })
 
@@ -24,7 +24,7 @@ export default function Home() {
                 <title>Hanz Aquino</title>
                 <link rel="icon" href="/favicon.svg" />
             </Head>
-
+            {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>
                 {/* <AnimatedBackground
                     speedMultiplier={0.9}
@@ -35,7 +35,7 @@ export default function Home() {
                 <SectionIndicator sections={sections} />
                 <Introduction />
                 <Skills />
-                <Projects />
+                {/* <Projects /> */}
 
                 <div>
                     <br />
