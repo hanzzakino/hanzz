@@ -57,7 +57,7 @@ export default function Introduction() {
                         <a
                             href="https://linkedin.com/in/hanzzakino"
                             target="_blank"
-                            className={styles.socialGT + ' ' + styles.tooltip}
+                            className={styles.socialLI + ' ' + styles.tooltip}
                         >
                             <BsLinkedin className={styles.icon} />
                             {/* <span className={styles.tooltiptext}>GitHub</span> */}
