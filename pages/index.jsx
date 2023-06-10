@@ -32,12 +32,12 @@ export default function Home() {
                     maxBlur={6}
                     enableBlur
                 />
-                <SectionIndicator sections={sections} />
+                {/* <SectionIndicator sections={sections} /> */}
                 <Introduction />
-                <Skills />
-                <Projects />
+                {/* <Skills /> */}
+                {/* <Projects /> */}
 
-                <div>
+                {/* <div>
                     <br />
                     <br />
                     <br />
@@ -164,7 +164,7 @@ export default function Home() {
                     <br />
                     <br />
                     <br />
-                </div>
+                </div> */}
             </main>
         </div>
     )
