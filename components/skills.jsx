@@ -41,8 +41,8 @@ export default function Skills() {
                 <div className={styles.intro}>
                     Driven by fascination and curiosity about how a computer
                     works, I started to learn programming in 2017. I was amazed
-                    by the idea that I could instruct a computer to do what I
-                    wanted. I loved the challenge of analytical and mathematical
+                    by the idea that I could instruct a computer to do certain
+                    task. I loved the challenge of analytical and mathematical
                     problem solving, and I found programming as a great tool for
                     that.
                 </div>
