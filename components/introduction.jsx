@@ -1,6 +1,12 @@
 import styles from '../styles/Introduction.module.css'
 import { useSettingsContext } from '../context/SettingsContext'
-import { BsGithub, BsFacebook, BsTwitter, BsEnvelopeFill } from 'react-icons/bs'
+import {
+    BsGithub,
+    BsFacebook,
+    BsTwitter,
+    BsLinkedin,
+    BsEnvelopeFill,
+} from 'react-icons/bs'
 export default function Introduction() {
     const { theme } = useSettingsContext()
 
@@ -46,6 +52,14 @@ export default function Introduction() {
                             className={styles.socialGT + ' ' + styles.tooltip}
                         >
                             <BsGithub className={styles.icon} />
+                            {/* <span className={styles.tooltiptext}>GitHub</span> */}
+                        </a>
+                        <a
+                            href="https://linkedin.com/in/hanzzakino"
+                            target="_blank"
+                            className={styles.socialGT + ' ' + styles.tooltip}
+                        >
+                            <BsLinkedin className={styles.icon} />
                             {/* <span className={styles.tooltiptext}>GitHub</span> */}
                         </a>
                         <a
