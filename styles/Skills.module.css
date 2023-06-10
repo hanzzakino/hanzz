@@ -7,14 +7,15 @@
     overflow: hidden;
     justify-content: center;
     padding: 32px 16% 32px 16%;
+
     /* background-color: rgb(3, 31, 44); */
     /* background-color: rgb(255, 255, 255); */
-    margin: 0;
+    margin-top: 36px;
 }
 
 .title {
     font-family: 'Poppins';
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     color: rgb(29, 161, 242);
     letter-spacing: 1px;
 }
@@ -23,17 +24,17 @@
     font-style: normal;
 }
 .subtitle {
-    margin: 36px 0px 24px 0px;
+    margin: 32px 0px 24px 0px;
     color: rgb(29, 161, 242);
-    font-size: 2.4rem;
+    font-size: 2.1rem;
     align-self: center;
 }
 
 .intro {
-    font-family: 'Poppins';
+    font-family: 'Source Sans Pro';
     /* font-weight: bold; */
     margin-top: 1rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 2rem;
     /* text-align: right; */
@@ -54,21 +55,18 @@
 .skillGroupTitle {
     font-family: 'Source Sans Pro';
     font-size: 1rem;
-    /* color: rgb(29, 161, 242); */
     letter-spacing: 1px;
     margin: 8px 0 8px 0;
     letter-spacing: 1px;
-    /* width: 80%; */
     text-align: center;
     margin-top: 2px;
+    color: #272727;
 }
 .skillGroup {
-    /* background-color: aquamarine; */
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
-    /* flex-flow: column; */
     flex-wrap: wrap;
     margin: 24px 24px 14px 24px;
 }
@@ -76,7 +74,7 @@
     /* background-color: rgb(255, 255, 255); */
     height: 64px;
     width: 64px;
-    margin: 12px 12px 24px 12px;
+    margin: 8px 8px 24px 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,11 +89,13 @@
     user-select: none;
 }
 .skillName {
-    font-family: 'Poppins';
+    font-family: 'Source Sans Pro';
+    font-size: 0.8rem;
     position: absolute;
     margin-top: 90px;
     width: 72px;
     text-align: center;
+    color: #272727;
     /* filter: invert(100%); */
     /* visibility: hidden; */
     opacity: 0%;
@@ -117,4 +117,50 @@
 .frameworksContainer > .skillGroupContainer {
     /* background-color: aquamarine; */
     width: 50%;
+}
+
+/* @media only screen and (max-width: 1024px) {
+    .group1_img {
+        min-width: 300px;
+        margin-right: 10px;
+    }
+} */
+@media only screen and (max-width: 820px) {
+    .title {
+        font-size: 2rem;
+    }
+    .subtitle {
+        font-size: 1.8rem;
+    }
+    .intro {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .container {
+        /* background-color: #fd5565; */
+        height: fit-content;
+        padding: 12px 10% 0 10%;
+        width: 100%;
+    }
+    .frameworksContainer {
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .frameworksContainer > .skillGroupContainer {
+        /* background-color: aquamarine; */
+        width: 90%;
+    }
+    .skillLogo {
+        height: 32px;
+        width: 32px;
+    }
+    .skillContainer {
+        height: 48px;
+        width: 48px;
+        margin: 8px 8px 24px 8px;
+    }
+    .skillGroupContainer {
+        padding: 12px 5px 5px 5px;
+    }
 }

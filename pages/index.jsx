@@ -8,12 +8,13 @@ import { useSettingsContext } from '../context/SettingsContext'
 import Skills from '../components/skills'
 import SectionIndicator from '../components/shared/sectionIndicator'
 import Projects from '../components/projects'
+import Footer from '../components/footer'
 
 export default function Home() {
     const { theme } = useSettingsContext()
     const [sections, setSections] = useState({
         currentSection: 1,
-        sectionList: ['Introduction', 'Skills', 'Projects', 'More...'],
+        sectionList: ['Introduction', 'About Me', 'Projects', 'More...'],
     })
 
     const { currentSection, numberOfSections } = sections
@@ -26,12 +27,12 @@ export default function Home() {
             </Head>
             {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>
-                <AnimatedBackground
+                {/* <AnimatedBackground
                     speedMultiplier={0.9}
                     opacity={0.25}
                     maxBlur={6}
                     enableBlur
-                />
+                /> */}
                 <SectionIndicator sections={sections} />
                 <Introduction />
                 <Skills />
@@ -50,121 +51,8 @@ export default function Home() {
                     <br />
                     <br />
                     <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
                 </div>
+                <Footer />
             </main>
         </div>
     )
