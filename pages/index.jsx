@@ -13,7 +13,7 @@ import Footer from '../components/footer'
 export default function Home() {
     const { theme } = useSettingsContext()
     const [sections, setSections] = useState({
-        currentSection: 1,
+        currentSection: 0,
         sectionList: ['Introduction', 'About Me', 'Projects', 'More...'],
     })
 
@@ -34,7 +34,7 @@ export default function Home() {
                     enableBlur
                 /> */}
                 <SectionIndicator sections={sections} />
-                <Introduction />
+                <Introduction viewed={currentSection >= 0} />
                 <Skills />
                 {/* <Projects /> */}
 

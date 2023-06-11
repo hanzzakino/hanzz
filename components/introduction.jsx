@@ -7,13 +7,18 @@ import {
     BsLinkedin,
     BsEnvelopeFill,
 } from 'react-icons/bs'
-export default function Introduction() {
+export default function Introduction({ viewed }) {
     const { theme } = useSettingsContext()
 
     return (
         <div className={styles.container}>
             <div className={styles.group1}>
-                <div className={styles.group1_img}>
+                <div
+                    className={
+                        styles.group1_img +
+                        (viewed ? ' animation_slideUp100' : '')
+                    }
+                >
                     <img
                         className={styles.group1_me}
                         src="/assets/intro/hanz.png"
@@ -31,21 +36,48 @@ export default function Introduction() {
                     />
                 </div>
                 <div className={styles.group1_msg}>
-                    <h1 className={styles.group1_msg1}>Hi! I'm</h1>
+                    <h1
+                        className={
+                            styles.group1_msg1 +
+                            (viewed ? ' animation_slideLeft100d15' : '')
+                        }
+                    >
+                        Hi! I'm
+                    </h1>
 
-                    <h1 className={styles.group1_msg2}>
+                    <h1
+                        className={
+                            styles.group1_msg2 +
+                            (viewed ? ' animation_slideLeft100d17' : '')
+                        }
+                    >
                         Hanz Aquino<i>.</i>
                     </h1>
-                    <p className={styles.group1_msg3}>
+                    <p
+                        className={
+                            styles.group1_msg3 +
+                            (viewed ? ' animation_slideLeft100d20' : '')
+                        }
+                    >
                         I'm a <b>Computer Engineer / Programmer </b>
                         and I convert <i>ideas</i> and <i>creativity</i> into a
                         piece of technology.
                     </p>
-                    <p className={styles.group1_msg4}>
+                    <p
+                        className={
+                            styles.group1_msg4 +
+                            (viewed ? ' animation_slideLeft100d20' : '')
+                        }
+                    >
                         Also, a&nbsp;
                         <nobr className={styles.multiTalent}></nobr>
                     </p>
-                    <div className={styles.group1_social}>
+                    <div
+                        className={
+                            styles.group1_social +
+                            (viewed ? ' animation_popUp' : '')
+                        }
+                    >
                         <a
                             href="https://github.com/hanzzakino"
                             target="_blank"
