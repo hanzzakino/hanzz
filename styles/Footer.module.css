@@ -1,0 +1,15 @@
+.footerContainer {
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 96px;
+
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    /* font-weight: bold; */
+
+    width: 100%;
+    position: relative;
+    flex-direction: column;
+}

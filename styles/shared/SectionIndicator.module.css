@@ -8,7 +8,8 @@
     justify-content: center;
     /* background-color: white; */
     animation: slowShow 1.2s ease-in;
-    margin-left: 3.6vw;
+    right: 0;
+    margin-right: 2vw;
 }
 
 /* @keyframes appearFromLeft {
@@ -66,4 +67,13 @@
     left: 3.2vw;
     width: 1px;
     height: 32vh;
+}
+
+@media only screen and (max-width: 820px) {
+    .indicatorContainer .icon {
+        font-size: 0.5rem;
+    }
+    .container {
+        margin-right: 2px;
+    }
 }
