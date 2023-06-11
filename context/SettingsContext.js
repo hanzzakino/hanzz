@@ -18,29 +18,29 @@ export const SettingsContextWrapper = ({ children }) => {
         // console.log(viewedSection)
     }
 
-    // const hasWindow = typeof window !== 'undefined'
-    // const getWindowDimensions = () => {
-    //     const screenWidth = hasWindow ? window.innerWidth : null
-    //     const screenHeight = hasWindow ? window.innerHeight : null
-    //     return {
-    //         screenWidth,
-    //         screenHeight,
-    //         windowAvailable: hasWindow,
-    //     }
-    // }
-    // useEffect(() => {
-    //     if (hasWindow) {
-    //         const handleResize = () => {
-    //             setWindowDimensions(getWindowDimensions())
-    //         }
+    const hasWindow = typeof window !== 'undefined'
+    const getWindowDimensions = () => {
+        const screenWidth = hasWindow ? window.innerWidth : null
+        const screenHeight = hasWindow ? window.innerHeight : null
+        return {
+            screenWidth,
+            screenHeight,
+            windowAvailable: hasWindow,
+        }
+    }
+    useEffect(() => {
+        if (hasWindow) {
+            const handleResize = () => {
+                setWindowDimensions(getWindowDimensions())
+            }
 
-    //         window.addEventListener('resize', handleResize)
-    //         return () => window.removeEventListener('resize', handleResize)
-    //     }
-    // }, [hasWindow])
-    // const [windowDimensions, setWindowDimensions] = useState(
-    //     getWindowDimensions()
-    // )
+            window.addEventListener('resize', handleResize)
+            return () => window.removeEventListener('resize', handleResize)
+        }
+    }, [hasWindow])
+    const [windowDimensions, setWindowDimensions] = useState(
+        getWindowDimensions()
+    )
 
     return (
         <SettingsContext.Provider
@@ -49,7 +49,7 @@ export const SettingsContextWrapper = ({ children }) => {
                 setTheme,
                 sections,
                 setCurrentSection,
-                // ...windowDimensions,
+                ...windowDimensions,
             }}
         >
             {children}
