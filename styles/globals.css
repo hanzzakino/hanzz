@@ -12,6 +12,7 @@ body {
 .light {
     /* background: rgb(227,234,238); */
     background: #f6f9f9;
+    /* change to pink blue gradient */
     color: #272727;
 }
 
@@ -75,9 +76,32 @@ button {
 /* @media only screen and (max-width: 720px) {
   
 }  */
-
-.animation_slideUp100 {
+.aimation_delay02 {
+    animation-delay: 0.2s;
+}
+.aimation_delay05 {
+    animation-delay: 0.5s;
+}
+.aimation_delay08 {
+    animation-delay: 0.8s;
+}
+.aimation_delay10 {
+    animation-delay: 1s;
+}
+.aimation_delay12 {
+    animation-delay: 1.2s;
+}
+.aimation_delay15 {
+    animation-delay: 1.5s;
+}
+.animation_slideUp100s1 {
     animation: slideUp100 1s ease-out;
+}
+.animation_slideUp100s14 {
+    animation: slideUp100 1.4s ease-out;
+}
+.animation_slideUp100s18 {
+    animation: slideUp100 1.8s ease-out;
 }
 @keyframes slideUp100 {
     0% {
@@ -95,13 +119,13 @@ button {
         opacity: 100%;
     }
 }
-.animation_slideLeft100d15 {
+.animation_slideLeft100s15 {
     animation: slideLeft100d1 1.5s ease-out;
 }
-.animation_slideLeft100d17 {
+.animation_slideLeft100s17 {
     animation: slideLeft100d1 1.7s ease-out;
 }
-.animation_slideLeft100d20 {
+.animation_slideLeft100s20 {
     animation: slideLeft100d1 2s ease-out;
 }
 @keyframes slideLeft100d1 {
@@ -120,7 +144,7 @@ button {
         opacity: 100%;
     }
 }
-.animation_popUp {
+.animation_popUps2 {
     animation: popUp 2s ease-out;
 }
 @keyframes popUp {
