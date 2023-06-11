@@ -13,6 +13,12 @@ body {
     /* background: rgb(227,234,238); */
     background: #f6f9f9;
     /* change to pink blue gradient */
+    /* background: rgb(255, 245, 247);
+    background: linear-gradient(
+        235deg,
+        rgba(255, 245, 247, 1) 0%,
+        #f6f9f9 100%
+    ); */
     color: #272727;
 }
 
