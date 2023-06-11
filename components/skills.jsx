@@ -6,14 +6,17 @@ import { useEffect, useState } from 'react'
 
 export default function Skills() {
     const { theme, setCurrentSection } = useSettingsContext()
+    const [thresholdDefault, setThresholdDefault] = useState(0.9)
     const { ref, inView } = useInView({
         /* Optional options */
-        triggerOnce: true,
-        threshold: 0.5,
+        threshold: thresholdDefault,
     })
+    const [isViewed, setIsViewed] = useState(false)
     useEffect(() => {
         if (inView) {
+            setIsViewed((prevState) => true)
             setCurrentSection(1)
+            setThresholdDefault(0.5)
         }
     }, [inView])
 
@@ -47,12 +50,12 @@ export default function Skills() {
 
     return (
         <div className={styles.container} ref={ref}>
-            {inView ? (
+            {isViewed ? (
                 <>
                     <div
                         className={
                             styles.titleContainer +
-                            (inView
+                            (isViewed
                                 ? ' animation_slideUp100s1 aimation_delay12'
                                 : '')
                         }
@@ -73,7 +76,7 @@ export default function Skills() {
                     <h1
                         className={
                             styles.subtitle +
-                            (inView
+                            (isViewed
                                 ? ' animation_slideUp100s14 aimation_delay12'
                                 : '')
                         }
@@ -84,7 +87,7 @@ export default function Skills() {
                     <div
                         className={
                             styles.frameworksContainer +
-                            (inView
+                            (isViewed
                                 ? ' animation_slideUp100s18 aimation_delay12'
                                 : '')
                         }

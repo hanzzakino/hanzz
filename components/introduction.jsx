@@ -14,24 +14,24 @@ export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
     const { ref, inView } = useInView({
         /* Optional options */
-        triggerOnce: true,
         threshold: 0.5,
     })
-
+    const [isViewed, setIsViewed] = useState(false)
     useEffect(() => {
         if (inView) {
+            setIsViewed((prevState) => true)
             setCurrentSection(0)
         }
     }, [inView])
 
     return (
         <div className={styles.container} ref={ref}>
-            {inView ? (
+            {isViewed ? (
                 <div className={styles.group1}>
                     <div
                         className={
                             styles.group1_img +
-                            (inView ? ' animation_slideUp100s1' : '')
+                            (isViewed ? ' animation_slideUp100s1' : '')
                         }
                     >
                         <img
@@ -54,7 +54,7 @@ export default function Introduction() {
                         <h1
                             className={
                                 styles.group1_msg1 +
-                                (inView ? ' animation_slideLeft100s15' : '')
+                                (isViewed ? ' animation_slideLeft100s15' : '')
                             }
                         >
                             Hi! I'm
@@ -63,7 +63,7 @@ export default function Introduction() {
                         <h1
                             className={
                                 styles.group1_msg2 +
-                                (inView ? ' animation_slideLeft100s17' : '')
+                                (isViewed ? ' animation_slideLeft100s17' : '')
                             }
                         >
                             Hanz Aquino<i>.</i>
@@ -71,7 +71,7 @@ export default function Introduction() {
                         <p
                             className={
                                 styles.group1_msg3 +
-                                (inView ? ' animation_slideLeft100s20' : '')
+                                (isViewed ? ' animation_slideLeft100s20' : '')
                             }
                         >
                             I'm a <b>Computer Engineer / Programmer </b>
@@ -81,7 +81,7 @@ export default function Introduction() {
                         <p
                             className={
                                 styles.group1_msg4 +
-                                (inView ? ' animation_slideLeft100s20' : '')
+                                (isViewed ? ' animation_slideLeft100s20' : '')
                             }
                         >
                             Also, a&nbsp;
@@ -90,7 +90,7 @@ export default function Introduction() {
                         <div
                             className={
                                 styles.group1_social +
-                                (inView ? ' animation_popUps2' : '')
+                                (isViewed ? ' animation_popUps2' : '')
                             }
                         >
                             <a
