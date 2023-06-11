@@ -19,7 +19,7 @@
     flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0 8% 0 8%;
+    padding: 0 16% 0 16%;
 }
 .navbar_container nav img {
     height: 36px;
@@ -32,8 +32,8 @@
     flex-flow: row;
 }
 .navbar_container nav ul li a {
-    padding: 4px 10px 4px 10px;
-    margin: 0 6px 0 6px;
+    padding: 4px 0 4px 10px;
+    margin: 0 0 0 12px;
     color: #272727;
 
     font-weight: 600;
