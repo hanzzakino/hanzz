@@ -24,16 +24,6 @@ export default function Home() {
             <Head>
                 <title>Hanz Aquino</title>
                 <link rel="icon" href="/favicon.svg" />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossorigin
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Source+Sans+3:wght@400;600;700;900&display=swap"
-                    rel="stylesheet"
-                />
             </Head>
             {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>
