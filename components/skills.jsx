@@ -64,6 +64,7 @@ export default function Skills() {
                                     src={lang.iconUrl}
                                     width={64}
                                     height={64}
+                                    alt={lang.name}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -88,6 +89,7 @@ export default function Skills() {
                                     src={framework.iconUrl}
                                     width={64}
                                     height={64}
+                                    alt={framework.name}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -114,6 +116,7 @@ export default function Skills() {
                                     src={framework.iconUrl}
                                     width={64}
                                     height={64}
+                                    alt={framework.name}
                                 />
                                 <p
                                     className={styles.skillName}

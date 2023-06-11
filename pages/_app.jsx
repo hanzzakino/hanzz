@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import { SettingsContextWrapper } from '../context/SettingsContext.js'
+
 function MyApp({ Component, pageProps }) {
     return (
         <SettingsContextWrapper>

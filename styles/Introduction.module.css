@@ -54,7 +54,7 @@
     max-width: 600px;
 }
 .group1_msg1 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 3.4rem;
     /* color: #272727; */
     line-height: 3.8rem;
@@ -62,7 +62,7 @@
     animation: slideLeft100d1 1.5s ease-out;
 }
 .group1_msg2 {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 3.4rem;
     color: rgb(29, 161, 242);
     line-height: 3.8rem;
@@ -73,7 +73,7 @@
     font-style: normal;
 }
 .group1_msg3 {
-    font-family: 'Source Sans Pro Semibold';
+    font-weight: 600;
     margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -85,14 +85,15 @@
 .group1_msg3 b {
     font-size: 1.3rem;
     color: #20bde8;
-    font-family: 'Source Sans Pro Black';
+
+    font-weight: 900;
 }
 .group1_msg3 i {
     color: #fd5565;
     font-style: normal;
 }
 .group1_msg4 {
-    font-family: 'Source Sans Pro Semibold';
+    font-weight: 600;
     margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 2px;
@@ -104,7 +105,8 @@
 .group1_msg4 nobr {
     font-size: 1.3rem;
     color: #20bde8;
-    font-family: 'Source Sans Pro Black';
+
+    font-weight: 900;
 }
 .group1_social {
     /* color: #272727; */
@@ -159,7 +161,7 @@
     margin-left: -56px;
     visibility: hidden;
     width: 90px;
-    font-family: 'Source Sans Pro';
+
     font-weight: 600;
     letter-spacing: 1px;
     /* color: #272727; */

@@ -1,8 +1,8 @@
 .navbar_container {
     backdrop-filter: blur(24px);
-	-webkit-backdrop-filter: blur(24px);
-  	-moz-backdrop-filter: blur(24px);
-	background: rgba(250,253,255,0.75);
+    -webkit-backdrop-filter: blur(24px);
+    -moz-backdrop-filter: blur(24px);
+    background: rgba(250, 253, 255, 0.75);
     z-index: 5;
     position: fixed;
     top: 0;
@@ -35,7 +35,7 @@
     padding: 4px 10px 4px 10px;
     margin: 0 6px 0 6px;
     color: #272727;
-    font-family: 'Source Sans Pro';
+
     font-weight: 600;
     font-size: 1rem;
     /* letter-spacing: 1px; */
