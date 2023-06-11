@@ -4,6 +4,19 @@ const SettingsContext = createContext()
 
 export const SettingsContextWrapper = ({ children }) => {
     const [theme, setTheme] = useState('light')
+    const [sections, setSections] = useState({
+        currentSection: 0,
+        sectionList: ['Introduction', 'About Me'],
+    })
+
+    const setCurrentSection = (viewedSection) => {
+        setSections((prevState) => ({
+            ...prevState,
+            currentSection: viewedSection,
+        }))
+
+        // console.log(viewedSection)
+    }
 
     const hasWindow = typeof window !== 'undefined'
     const getWindowDimensions = () => {
@@ -34,6 +47,8 @@ export const SettingsContextWrapper = ({ children }) => {
             value={{
                 theme,
                 setTheme,
+                sections,
+                setCurrentSection,
                 ...windowDimensions,
             }}
         >

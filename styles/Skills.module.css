@@ -14,7 +14,7 @@
 }
 
 .title {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
     color: rgb(29, 161, 242);
     letter-spacing: 1px;
@@ -31,8 +31,6 @@
 }
 
 .intro {
-    font-family: 'Source Sans Pro';
-    /* font-weight: bold; */
     margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 1px;
@@ -53,7 +51,6 @@
     border-radius: 6px;
 }
 .skillGroupTitle {
-    font-family: 'Source Sans Pro';
     font-size: 1rem;
     letter-spacing: 1px;
     margin: 8px 0 8px 0;
@@ -89,7 +86,6 @@
     user-select: none;
 }
 .skillName {
-    font-family: 'Source Sans Pro';
     font-size: 0.8rem;
     position: absolute;
     margin-top: 90px;

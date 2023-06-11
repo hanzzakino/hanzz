@@ -59,7 +59,7 @@ export default function AnimatedBackground({
             )
         }
         setAnimatedShapes(tempanimatedShapes)
-        console.log(animatedShapes)
+        // console.log(animatedShapes)
     }, [shapeNumber])
 
     return (

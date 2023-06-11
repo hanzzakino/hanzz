@@ -2,8 +2,8 @@ import styles from '../../styles/shared/SectionIndicator.module.css'
 import { useSettingsContext } from '../../context/SettingsContext'
 import { BsDiamondFill, BsDiamond } from 'react-icons/bs'
 
-export default function SectionIndicator({ sections }) {
-    const { theme } = useSettingsContext()
+export default function SectionIndicator() {
+    const { theme, sections } = useSettingsContext()
 
     return (
         <div className={styles.container}>
@@ -17,7 +17,11 @@ export default function SectionIndicator({ sections }) {
                         >
                             {index === sections.currentSection ? (
                                 <BsDiamondFill
-                                    className={styles.icon}
+                                    className={
+                                        styles.icon +
+                                        ' ' +
+                                        styles.selectedIndicator
+                                    }
                                     key={sectionTitle + '002'}
                                 />
                             ) : (
