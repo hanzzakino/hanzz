@@ -33,7 +33,7 @@ export default function Home() {
                     maxBlur={6}
                     enableBlur
                 />
-                <SectionIndicator sections={sections} />
+                {/* <SectionIndicator sections={sections} /> */}
                 <Introduction />
                 <Skills />
                 {/* <Projects /> */}
