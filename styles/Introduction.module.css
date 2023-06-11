@@ -7,23 +7,24 @@
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-
+    padding: 0 16% 0 16%;
     /* background-color: yellowgreen; */
 }
 .group1 {
+    width: 100%;
     /* background-color: yellow; */
     display: flex;
     flex-flow: row;
     align-items: center;
+    justify-content: space-between;
 }
 .group1_img {
     /* background-color: orange; */
     height: 340px;
     width: 300px;
-    margin-right: 80px;
+    display: flex;
     position: relative;
-    overflow: hidden;
-    scale: 0.92;
+    /* overflow: hidden; */
     user-select: none;
 }
 
@@ -33,13 +34,15 @@
     left: 10%;
     z-index: 2;
     height: 340px;
+    scale: 0.92;
 }
 .group1_blue {
     position: absolute;
-    top: 35px;
+    top: 33px;
     left: 16px;
     z-index: 1;
     height: 304px;
+    scale: 0.92;
 }
 .group1_gray {
     position: absolute;
@@ -47,11 +50,13 @@
     left: 5px;
     z-index: 0;
     height: 304px;
+    scale: 0.92;
 }
 .group1_msg {
-    /* background-color: orange; */
+    /* background-color: burlywood; */
     height: fit-content;
-    max-width: 600px;
+    padding-left: 60px;
+    width: 70%;
 }
 .group1_msg1 {
     font-family: 'Poppins', sans-serif;
@@ -291,33 +296,29 @@ Musician, Gamer,
     }
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .group1_img {
-        min-width: 300px;
-        margin-right: 10px;
-    }
-} */
 @media only screen and (max-width: 820px) {
+    .container {
+        padding: 5% 10% 5% 10%;
+    }
     .group1 {
         align-items: center;
         flex-flow: column;
     }
     .group1_img {
         margin: 0;
-        scale: 0.85;
+        scale: 0.8;
         position: relative;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .group1_msg {
         /* background-color: #0072b1; */
-        height: fit-content;
-        padding: 12px 10% 0 10%;
+        /* height: fit-content; */
+        padding: 12px 0 12px 0;
         width: 100%;
     }
     .group1_msg1 {
         font-size: 2.6rem;
         line-height: 3rem;
-        margin-top: 6px;
     }
     .group1_msg2 {
         font-size: 2.6rem;
@@ -325,21 +326,16 @@ Musician, Gamer,
     }
     .group1_msg3 {
         margin-top: 1rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
         letter-spacing: 2px;
-        line-height: 2rem;
+        line-height: 1.6rem;
     }
     .group1_social {
         justify-content: center;
-        margin-top: 2rem;
+        margin-top: 1.6rem;
     }
     .group1_social a {
-        margin: 24px;
-    }
-}
-@media only screen and (max-width: 380px) {
-    .group1 {
-        transform: scale(0.8);
+        margin: 18px;
     }
 }
 

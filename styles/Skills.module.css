@@ -10,7 +10,7 @@
 
     /* background-color: rgb(3, 31, 44); */
     /* background-color: rgb(255, 255, 255); */
-    margin-top: 36px;
+    margin-top: 12px;
 }
 
 .title {
@@ -24,7 +24,7 @@
     font-style: normal;
 }
 .subtitle {
-    margin: 32px 0px 24px 0px;
+    margin: 56px 0px 24px 0px;
     color: rgb(29, 161, 242);
     font-size: 2.1rem;
     align-self: center;
@@ -46,7 +46,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 24px 10px 10px 10px;
+    padding: 24px 10px 16px 10px;
     margin: 8px;
     border-radius: 6px;
 }
@@ -94,7 +94,7 @@
     color: #272727;
     /* filter: invert(100%); */
     /* visibility: hidden; */
-    opacity: 0%;
+    opacity: 100%;
 }
 .skillContainer:hover .skillName {
     opacity: 100%;
@@ -137,6 +137,7 @@
         height: fit-content;
         padding: 12px 10% 0 10%;
         width: 100%;
+        margin-top: 36px;
     }
     .frameworksContainer {
         flex-flow: column;

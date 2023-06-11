@@ -21,12 +21,12 @@ export default function Home() {
             </Head>
             {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>
-                <AnimatedBackground
+                {/* <AnimatedBackground
                     speedMultiplier={0.9}
                     opacity={0.25}
                     maxBlur={6}
                     enableBlur
-                />
+                /> */}
                 <SectionIndicator />
                 <Introduction />
                 <Skills />
