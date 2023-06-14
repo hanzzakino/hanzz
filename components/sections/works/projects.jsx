@@ -1,8 +1,8 @@
-import styles from '../../styles/Projects.module.css'
-import { useSettingsContext } from '../../context/SettingsContext'
+import styles from '../../../styles/sections/Projects.module.css'
+import { useSettingsContext } from '../../../context/SettingsContext'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
-import Project from './projects-components/project'
+import Project from './project'
 
 export default function Projects() {
     const { theme, setCurrentSection } = useSettingsContext()

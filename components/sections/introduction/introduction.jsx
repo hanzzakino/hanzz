@@ -1,5 +1,5 @@
-import styles from '../../styles/Introduction.module.css'
-import { useSettingsContext } from '../../context/SettingsContext'
+import styles from '../../../styles/sections/Introduction.module.css'
+import { useSettingsContext } from '../../../context/SettingsContext'
 import {
     BsGithub,
     BsFacebook,

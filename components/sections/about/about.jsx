@@ -1,10 +1,10 @@
-import styles from '../../styles/Skills.module.css'
-import { useSettingsContext } from '../../context/SettingsContext'
+import styles from '../../../styles/sections/About.module.css'
+import { useSettingsContext } from '../../../context/SettingsContext'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 
-export default function Skills() {
+export default function About() {
     const { theme, setCurrentSection } = useSettingsContext()
     const [thresholdDefault, setThresholdDefault] = useState(0.4)
     const { ref, inView } = useInView({
