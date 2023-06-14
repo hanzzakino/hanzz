@@ -8,7 +8,7 @@
     justify-content: center;
     padding: 32px 16% 32px 16%;
     max-width: 2048px;
-    /* background-color: rgb(3, 31, 44); */
+    /* background-color: rgb(80, 161, 60); */
     /* background-color: rgb(255, 255, 255); */
     margin-top: 12px;
 }
@@ -23,18 +23,24 @@
     color: #fd5565;
     font-style: normal;
 }
-.subtitle {
+.subtitleContainer {
     margin: 56px 0px 24px 0px;
+    font-size: 2.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.subtitle {
     color: rgb(29, 161, 242);
     font-size: 2.1rem;
-    align-self: center;
 }
 
 .intro {
     margin-top: 1rem;
     font-size: 1.2rem;
     letter-spacing: 1px;
-    line-height: 2rem;
+    line-height: 2.4rem;
     /* text-align: right; */
     text-align: justify;
 }

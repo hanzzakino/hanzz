@@ -1,4 +1,4 @@
-import styles from '../styles/Footer.module.css'
+import styles from '../../styles/Footer.module.css'
 import { BsGithub } from 'react-icons/bs'
 
 export default function Footer() {

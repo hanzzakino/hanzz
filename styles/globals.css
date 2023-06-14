@@ -7,7 +7,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
 }
 .light {
     /* background: rgb(227,234,238); */
@@ -77,6 +77,13 @@ button {
 ::-webkit-scrollbar-thumb:hover {
     background: #7c7c7c;
     transition: 0.5s;
+}
+
+.hiddenOp > div {
+    opacity: 0%;
+}
+.unhiddenOp > div {
+    opacity: 100%;
 }
 
 /* @media only screen and (max-width: 720px) {
