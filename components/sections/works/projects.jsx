@@ -6,7 +6,7 @@ import Project from './project'
 
 export default function Projects() {
     const { theme, setCurrentSection } = useSettingsContext()
-    const [thresholdDefault, setThresholdDefault] = useState(0.2) // vary
+    const [thresholdDefault, setThresholdDefault] = useState(0) // vary
     const { ref, inView } = useInView({
         /* Optional options */
         threshold: thresholdDefault,
@@ -26,16 +26,24 @@ export default function Projects() {
             type: 'Web Application',
             description:
                 'Created using NextJS and MongoDB, AICS-DB is a Database System for Assistance to individuals in crisis situations (AICS) program of San Jose del Monte City, Bulacan',
-            imageURLs: ['', ''],
+            imageURLs: [
+                '/assets/projects/aicsdb-0.png',
+                '/assets/projects/aicsdb-1.png',
+            ],
             technologiesUsed: ['nextjs', 'mongodb'],
+            link: '',
         },
         {
             title: 'SOrganizer',
             type: 'Web Application',
             description:
                 'SOrganizer is a Web Application for organizing school task, activities, and schedules',
-            imageURLs: ['', ''],
+            imageURLs: [
+                '/assets/projects/sorganizer-0.png',
+                '/assets/projects/sorganizer-1.png',
+            ],
             technologiesUsed: ['nextjs', 'firebase'],
+            link: 'https://sorganizer.vercel.app',
         },
     ]
 
@@ -49,11 +57,11 @@ export default function Projects() {
             <div
                 className={
                     styles.titleContainer +
-                    (isViewed ? ' animation_slideUp100s1 aimation_delay12' : '')
+                    (isViewed ? ' animation_slideUp100s1' : '')
                 }
             >
                 <h1 className={styles.title}>
-                    My Projects<i>.</i>
+                    My Works<i>.</i>
                 </h1>
                 {/* <div className={styles.intro}>
                     Driven by fascination and curiosity about how a computer

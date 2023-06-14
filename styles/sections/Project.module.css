@@ -1,12 +1,92 @@
 .container {
     width: 100%;
-    height: 30vh;
     display: flex;
     position: relative;
     flex-direction: column;
     align-self: center;
-    overflow: hidden;
-    margin-top: 48px;
+    /* overflow: hidden; */
+    margin: 48px 0 64px 0;
     max-width: 2048px;
-    background-color: rgb(204, 220, 228);
+    /* background-color: rgb(204, 220, 228); */
 }
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+.reversed {
+    flex-direction: row-reverse !important;
+}
+.detailsContainer {
+    width: 36%;
+    /* background-color: chartreuse; */
+}
+.imageContainer {
+    width: 60%;
+    /* overflow: hidden; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border-radius: 12px;
+    /* background-color: blue; */
+    overflow: visible !important;
+    filter: saturate(100%) sepia(0%) hue-rotate(0)
+        drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+    transition: 0.3s ease-out;
+}
+.image1 {
+    width: 100%;
+    border-radius: 12px;
+}
+.imageContainer:hover {
+    filter: brightness(70%) saturate(0%) sepia(100%) hue-rotate(178deg);
+    transform: scale(1.02);
+    transition: 0.3s ease-out;
+}
+.projectTitle {
+    color: rgb(29, 161, 242);
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+.projectDescription {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+.projectTech {
+    display: flex;
+    flex-direction: row;
+    /* background-color: aquamarine; */
+}
+.techContainer {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blueviolet; */
+    margin: 16px 8px 12px 0;
+}
+.techContainer > .techIcon {
+    width: 24px;
+    height: 24px;
+    filter: saturate(0%);
+}
+.techContainer > p {
+    visibility: hidden;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+.techContainer:hover > .techIcon {
+    filter: saturate(100%);
+}
+.techContainer:hover > p {
+    visibility: visible;
+}
+/* .image2 {
+    width: 30%;
+    border-radius: 6px;
+} */
+/* .projectContainer > div {
+    position: relative;
+} */
