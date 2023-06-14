@@ -8,7 +8,7 @@ export default function Project({ content, index }) {
     const { theme } = useSettingsContext()
     const { ref, inView } = useInView({
         /* Optional options */
-        threshold: 0.6,
+        threshold: 0.4,
         triggerOnce: true,
     })
 
