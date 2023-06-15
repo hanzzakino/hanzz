@@ -25,7 +25,7 @@ export default function Projects() {
             title: 'AICS-DB',
             type: 'Web Application',
             description:
-                'Created using NextJS and MongoDB, AICS-DB is a Database System for Assistance to individuals in crisis situations (AICS) program of San Jose del Monte City, Bulacan',
+                'Created using NextJS and MongoDB, AICS-DB is a Database System for Assistance to individuals in crisis situations (AICS) program of CSWD San Jose del Monte City, Bulacan',
             imageURLs: [
                 '/assets/projects/aicsdb-0.png',
                 '/assets/projects/aicsdb-1.png',

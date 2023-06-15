@@ -54,7 +54,7 @@
     justify-content: flex-start;
     padding: 24px 10px 16px 10px;
     margin: 8px;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 .skillGroupTitle {
     font-size: 1rem;
@@ -81,7 +81,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 6px;
+    border-radius: 8px;
     /* filter: invert(100%); */
     /* mix-blend-mode: difference; */
 }

@@ -65,8 +65,10 @@ export default function Project({ content, index }) {
                 }
             >
                 <div className={styles.detailsContainer}>
-                    <p className={styles.projectType}>{content.type}</p>
-                    <h1 className={styles.projectTitle}>{content.title}</h1>
+                    {/* <p className={styles.projectType}>{content.type}</p> */}
+                    <div className={styles.projectTitleContainer}>
+                        <h1 className={styles.projectTitle}>{content.title}</h1>
+                    </div>
                     <p className={styles.projectDescription}>
                         {content.description}
                     </p>
