@@ -14,12 +14,12 @@
 .title {
     font-family: 'Poppins', sans-serif;
     font-size: 2.4rem;
-    color: rgb(29, 161, 242);
+    color: var(--accent-color-1);
     letter-spacing: 1px;
     margin-bottom: 24px;
 }
 .title i {
-    color: #fd5565;
+    color: var(--accent-color-2);
     font-style: normal;
 }
 .subtitleContainer {
@@ -31,7 +31,7 @@
     align-items: center;
 }
 .subtitle {
-    color: rgb(29, 161, 242);
+    color: var(--accent-color-1);
     font-size: 2.1rem;
 }
 

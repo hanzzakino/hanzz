@@ -70,11 +70,11 @@
 .group1_msg2 {
     font-family: 'Poppins', sans-serif;
     font-size: 3.8rem;
-    color: rgb(29, 161, 242);
+    color: var(--accent-color-1);
     line-height: 3.8rem;
 }
 .group1_msg2 i {
-    color: #fd5565;
+    color: var(--accent-color-2);
     font-style: normal;
 }
 .group1_msg3 {
@@ -88,12 +88,12 @@
 }
 .group1_msg3 b {
     font-size: 1.3rem;
-    color: #20bde8;
+    color: var(--accent-color-1);
 
     font-weight: 900;
 }
 .group1_msg3 i {
-    color: #fd5565;
+    color: var(--accent-color-2);
     font-style: normal;
 }
 .group1_msg4 {
@@ -106,7 +106,7 @@
 }
 .group1_msg4 nobr {
     font-size: 1.3rem;
-    color: #20bde8;
+    color: var(--accent-color-1);
 
     font-weight: 900;
 }

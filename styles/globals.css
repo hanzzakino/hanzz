@@ -9,9 +9,19 @@ body {
     font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
+:root {
+    --accent-color-1: #20bde8;
+    --accent-color-2: #fd5565;
+
+    --light-foreground-color: #272727e7;
+    --light-background-color: #f6f9f9;
+    --dark-foreground-color: #bacdd1;
+    --dark-background-color: rgb(3, 31, 44);
+}
+
 .light {
     /* background: rgb(227,234,238); */
-    background: #f6f9f9;
+    background: var(--light-background-color);
     /* change to pink blue gradient */
     /* background: rgb(255, 245, 247);
     background: linear-gradient(
@@ -19,14 +29,14 @@ body {
         rgba(255, 245, 247, 1) 0%,
         #f6f9f9 100%
     ); */
-    color: #272727e7;
+    color: var(--light-foreground-color);
 }
 
 .dark {
     /* background: rgb(227,234,238); */
-    background-color: rgb(3, 31, 44);
+    background-color: var(--dark-background-color);
     /* background: #13191d; */
-    color: #bacdd1;
+    color: var(--dark-foreground-color);
 }
 
 a {

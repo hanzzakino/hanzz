@@ -32,6 +32,7 @@ export default function Projects() {
             ],
             technologiesUsed: ['nextjs', 'mongodb'],
             link: '',
+            repo: '',
         },
         {
             title: 'SOrganizer',
@@ -44,6 +45,7 @@ export default function Projects() {
             ],
             technologiesUsed: ['nextjs', 'firebase'],
             link: 'https://sorganizer.vercel.app',
+            repo: 'https://github.com/hanzzakino/sorganizer',
         },
     ]
 

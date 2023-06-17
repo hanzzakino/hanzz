@@ -52,12 +52,12 @@
     margin-bottom: 8px;
 }
 .projectTypeIcon {
-    color: rgb(29, 161, 242);
+    color: var(--accent-color-1);
     font-size: 1.5rem;
     margin-right: 6px;
 }
 .projectTitle {
-    color: rgb(29, 161, 242);
+    color: var(--accent-color-1);
     font-size: 2.3rem;
     letter-spacing: 1px;
 }
