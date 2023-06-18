@@ -6,7 +6,7 @@ export const SettingsContextWrapper = ({ children }) => {
     const [theme, setTheme] = useState('light')
     const [sections, setSections] = useState({
         currentSection: 0,
-        sectionList: ['Introduction', 'About Me'],
+        sectionList: ['Introduction', 'About Me', 'Projects'],
     })
 
     const setCurrentSection = (viewedSection) => {
