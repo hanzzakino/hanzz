@@ -28,11 +28,9 @@ export default function Home() {
                     enableBlur
                 /> */}
                 <SectionIndicator />
-
                 <Introduction />
                 <About />
                 <Projects />
-
                 <div>
                     <br />
                     <br />
