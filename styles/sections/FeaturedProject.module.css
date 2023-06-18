@@ -33,7 +33,7 @@
     /* background-color: blue; */
     overflow: visible !important;
     filter: saturate(100%) sepia(0%) hue-rotate(0)
-        drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.1));
+        drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     transition: 0.3s ease-out;
 }
 .image1 {
@@ -47,17 +47,21 @@
 }
 .projectTitleContainer {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 8px;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    margin-bottom: 24px;
 }
 .projectTypeIcon {
     color: var(--accent-color-1);
     font-size: 1.5rem;
     margin-right: 6px;
 }
+.projectType {
+    font-size: 1rem;
+    opacity: 75%;
+}
 .projectTitle {
-    color: var(--accent-color-1);
+    color: var(--light-accent-3);
     font-size: 2.3rem;
     letter-spacing: 1px;
 }
@@ -74,19 +78,21 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     /* background-color: blueviolet; */
-    margin: 16px 8px 12px 0;
+    margin: 24px 16px 12px 0;
 }
 .techContainer > .techIcon {
+    /* background-color: blue; */
     width: 24px;
     height: 24px;
     filter: saturate(0%);
 }
 .techContainer > p {
+    position: absolute;
     visibility: hidden;
-    margin-top: 5px;
-    font-size: 0.9rem;
+    margin-top: 32px;
+    font-size: 1rem;
 }
 .techContainer:hover > .techIcon {
     filter: saturate(100%);

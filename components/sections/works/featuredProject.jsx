@@ -1,50 +1,41 @@
 import { useSettingsContext } from '../../../context/SettingsContext'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
-import styles from '../../../styles/sections/Project.module.css'
+import styles from '../../../styles/sections/FeaturedProject.module.css'
 import Image from 'next/image'
 
-export default function Project({ content, index }) {
+export default function FeaturedProject({ content, index }) {
     const { theme } = useSettingsContext()
     const { ref, inView } = useInView({
         /* Optional options */
         threshold: 0.4,
         triggerOnce: true,
     })
-
-    const icons = {
-        java: '/assets/logo/tech/java3.svg',
-        python: '/assets/logo/tech/python.svg',
-        cpp: '/assets/logo/tech/cpp.svg',
-        js: '/assets/logo/tech/javascript.svg',
-        vb: '/assets/logo/tech/vb.svg',
-        nextjs: '/assets/logo/tech/nextjs.svg',
-        react: '/assets/logo/tech/reactjs.svg',
-        p5js: '/assets/logo/tech/p5js2.svg',
-        bootstrap: '/assets/logo/tech/bootstrap.svg',
-        eectronjs: '/assets/logo/tech/electronjs.svg',
-        dotnet: '/assets/logo/tech/dotnet.svg',
-        javafx: '/assets/logo/tech/java3.svg',
-        pyqt: '/assets/logo/tech/qt.svg',
-        firebase: '/assets/logo/tech/firebase.svg',
-        mongodb: '/assets/logo/tech/mongodb1.svg',
-    }
-    const names = {
-        java: 'Java',
-        python: 'Python',
-        cpp: 'C++',
-        js: 'JavaScript',
-        vb: 'Visual Basic',
-        nextjs: 'NextJS',
-        react: 'ReactJS',
-        p5js: 'p5.js',
-        bootstrap: 'Bootstrap',
-        eectronjs: 'ElectronJS',
-        dotnet: '.NET',
-        javafx: 'JavaFX',
-        pyqt: 'PyQT',
-        firebase: 'Firebase',
-        mongodb: 'MongoDB',
+    const techInfo = {
+        java: { name: 'Java', iconUrl: '/assets/logo/tech/java3.svg' },
+        python: { name: 'Python', iconUrl: '/assets/logo/tech/python.svg' },
+        cpp: { name: 'C++', iconUrl: '/assets/logo/tech/cpp.svg' },
+        js: { name: 'Javascript', iconUrl: '/assets/logo/tech/javascript.svg' },
+        vb: { name: 'Visual Basic', iconUrl: '/assets/logo/tech/vb.svg' },
+        nextjs: { name: 'NextJS', iconUrl: '/assets/logo/tech/nextjs.svg' },
+        react: { name: 'ReactJS', iconUrl: '/assets/logo/tech/reactjs.svg' },
+        p5js: { name: 'p5js', iconUrl: '/assets/logo/tech/p5js2.svg' },
+        bootstrap: {
+            name: 'Bootstrap',
+            iconUrl: '/assets/logo/tech/bootstrap.svg',
+        },
+        electronjs: {
+            name: 'ElectronJS',
+            iconUrl: '/assets/logo/tech/electronjs.svg',
+        },
+        dotnet: { name: '.NET', iconUrl: '/assets/logo/tech/dotnet.svg' },
+        javafx: { name: 'JavaFX', iconUrl: '/assets/logo/tech/java3.svg' },
+        pyqt: { name: 'PyQT', iconUrl: '/assets/logo/tech/qt.svg' },
+        firebase: {
+            name: 'Firebase',
+            iconUrl: '/assets/logo/tech/firebase.svg',
+        },
+        mongodb: { name: 'MongoDB', iconUrl: '/assets/logo/tech/mongodb1.svg' },
     }
 
     return (
@@ -65,8 +56,8 @@ export default function Project({ content, index }) {
                 }
             >
                 <div className={styles.detailsContainer}>
-                    <p className={styles.projectType}>{content.type}</p>
                     <div className={styles.projectTitleContainer}>
+                        <p className={styles.projectType}>{content.type}</p>
                         <h1 className={styles.projectTitle}>{content.title}</h1>
                     </div>
                     <p className={styles.projectDescription}>
@@ -81,13 +72,13 @@ export default function Project({ content, index }) {
                                 >
                                     <Image
                                         className={styles.techIcon}
-                                        src={icons[tech]}
+                                        src={techInfo[tech].iconUrl}
                                         width={64}
                                         height={64}
                                         alt={tech}
                                     />
                                     <p key={tech + content.title + '__002'}>
-                                        {names[tech]}
+                                        {techInfo[tech].name}
                                     </p>
                                 </div>
                             ))}

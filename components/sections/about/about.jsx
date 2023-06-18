@@ -84,7 +84,7 @@ export default function About() {
                         : '')
                 }
             >
-                <h1 className={styles.subtitle}>Technologies I work with:</h1>
+                <h1 className={styles.subtitle}>Technologies I work with</h1>
             </div>
 
             <div
