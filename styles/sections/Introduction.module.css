@@ -59,24 +59,20 @@
     padding-left: 60px;
     width: 70%;
 }
-.group1_msg1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 3.8rem;
-    /* color: #272727; */
-    line-height: 3.8rem;
-    /* margin-top: 1.5rem; */
-}
 
+.group1_msg1,
 .group1_msg2 {
     font-family: 'Poppins', sans-serif;
     font-size: 3.8rem;
-    color: var(--accent-color-1);
     line-height: 3.8rem;
 }
-.group1_msg2 i {
-    color: var(--accent-color-2);
-    font-style: normal;
+.accent1 {
+    color: var(--accent-color-1);
 }
+.accent2 {
+    color: var(--accent-color-2);
+}
+
 .group1_msg3 {
     font-weight: 600;
     margin-top: 1rem;
@@ -91,10 +87,6 @@
     color: var(--accent-color-1);
 
     font-weight: 900;
-}
-.group1_msg3 i {
-    color: var(--accent-color-2);
-    font-style: normal;
 }
 .group1_msg4 {
     font-weight: 600;
@@ -317,14 +309,12 @@ Musician, Gamer,
         padding: 12px 0 12px 0;
         width: 100%;
     }
-    .group1_msg1 {
-        font-size: 2.6rem;
-        line-height: 3rem;
-    }
+    .group1_msg1,
     .group1_msg2 {
         font-size: 2.6rem;
         line-height: 3rem;
     }
+
     .group1_msg3 {
         margin-top: 1rem;
         font-size: 1rem;

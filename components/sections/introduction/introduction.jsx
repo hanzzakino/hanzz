@@ -66,11 +66,13 @@ export default function Introduction() {
 
                     <h1
                         className={
+                            styles.accent1 +
+                            ' ' +
                             styles.group1_msg2 +
                             (isViewed ? ' animation_slideLeft100s17' : '')
                         }
                     >
-                        Hanz Aquino<i>.</i>
+                        Hanz Aquino<span className={styles.accent2}>.</span>
                     </h1>
                     <p
                         className={
@@ -79,8 +81,10 @@ export default function Introduction() {
                         }
                     >
                         I'm a <b>Computer Engineer / Programmer </b>
-                        and I convert <i>ideas</i> and <i>creativity</i> into a
-                        piece of technology.
+                        and I convert{' '}
+                        <span className={styles.accent2}>ideas</span> and{' '}
+                        <span className={styles.accent2}>creativity</span> into
+                        a piece of technology.
                     </p>
                     <p
                         className={
