@@ -87,6 +87,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={lang.name}
+                                    key={lang.name + '0001a'}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -112,6 +113,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={framework.name}
+                                    key={framework.name + '0001b'}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -139,6 +141,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={framework.name}
+                                    key={framework.name + '0001c'}
                                 />
                                 <p
                                     className={styles.skillName}

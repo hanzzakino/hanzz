@@ -49,6 +49,7 @@
 .skillGroupContainer {
     background-color: #ffffff;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     display: flex;
     flex-direction: column;
     align-items: center;

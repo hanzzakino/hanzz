@@ -34,6 +34,8 @@
     overflow: visible !important;
     filter: saturate(100%) sepia(0%) hue-rotate(0)
         drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+    -webkit-filter: saturate(100%) sepia(0%) hue-rotate(0)
+        drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     transition: 0.3s ease-out;
 }
 .image1 {
@@ -42,6 +44,7 @@
 }
 .imageContainer:hover {
     filter: brightness(80%) saturate(0%) sepia(100%) hue-rotate(178deg);
+    -webkit-filter: brightness(80%) saturate(0%) sepia(100%) hue-rotate(178deg);
     transform: scale(1.02);
     transition: 0.3s ease-out;
 }
@@ -93,6 +96,7 @@
     width: 24px;
     height: 24px;
     filter: saturate(0%);
+    -webkit-filter: saturate(0%);
 }
 .techContainer > p {
     position: absolute;
@@ -102,6 +106,7 @@
 }
 .techContainer:hover > .techIcon {
     filter: saturate(100%);
+    -webkit-filter: saturate(100%);
 }
 .techContainer:hover > p {
     visibility: visible;

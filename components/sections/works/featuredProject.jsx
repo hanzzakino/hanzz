@@ -68,6 +68,7 @@ export default function FeaturedProject({ content, index }) {
                                         width={64}
                                         height={64}
                                         alt={tech}
+                                        key={tech + content.title + '__001a'}
                                     />
                                     <p key={tech + content.title + '__002'}>
                                         {techInfo[tech].name}

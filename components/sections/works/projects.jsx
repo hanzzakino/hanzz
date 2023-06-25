@@ -104,7 +104,7 @@ const featuredProjects = () => {
                 defaultClassname={styles.titleContainer}
             >
                 <h1 className={styles.title}>
-                    My Works<i>.</i>
+                    My Projects<i>.</i>
                 </h1>
             </ScrollTrigger>
             <ScrollTrigger
@@ -117,7 +117,7 @@ const featuredProjects = () => {
             <div className={styles.projectsMainContainer}>
                 {featuredProjectsList.map((project, index) => (
                     <FeaturedProject
-                        key={project.title + '__'}
+                        key={project.title + '__2000'}
                         index={index}
                         content={project}
                     />
@@ -144,7 +144,7 @@ const otherProjects = () => {
 
             <div className={styles.otherProjectsMainContainer}>
                 {otherProjectsList.map((project, index) => (
-                    <OtherProject content={project} />
+                    <OtherProject content={project} key={index} />
                 ))}
             </div>
         </ScrollTrigger>
