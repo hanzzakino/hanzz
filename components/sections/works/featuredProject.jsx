@@ -1,16 +1,10 @@
 import { useSettingsContext } from '../../../context/SettingsContext'
-import { useInView } from 'react-intersection-observer'
-import { useEffect, useState } from 'react'
 import styles from '../../../styles/sections/FeaturedProject.module.css'
 import Image from 'next/image'
+import ScrollTrigger from '../../shared/scrollTrigger'
 
 export default function FeaturedProject({ content, index }) {
     const { theme } = useSettingsContext()
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: 0.4,
-        triggerOnce: true,
-    })
     const techInfo = {
         java: { name: 'Java', iconUrl: '/assets/logo/tech/java3.svg' },
         python: { name: 'Python', iconUrl: '/assets/logo/tech/python.svg' },
@@ -39,14 +33,12 @@ export default function FeaturedProject({ content, index }) {
     }
 
     return (
-        <div
-            className={
-                styles.container +
-                (inView
-                    ? ' animation_slideUp100s1 aimation_delay15 uhiddenOp'
-                    : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.4}
+            initialThresholdValue={0.4}
+            animationName="animation_slideUp100s1 aimation_delay15"
+            section={2}
+            defaultClassname={styles.container}
         >
             <div
                 className={
@@ -104,6 +96,6 @@ export default function FeaturedProject({ content, index }) {
                     </a>
                 </div>
             </div>
-        </div>
+        </ScrollTrigger>
     )
 }

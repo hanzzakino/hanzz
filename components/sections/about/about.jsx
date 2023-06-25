@@ -3,22 +3,10 @@ import { useSettingsContext } from '../../../context/SettingsContext'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
+import ScrollTrigger from '../../shared/scrollTrigger'
 
 export default function About() {
     const { theme, setCurrentSection } = useSettingsContext()
-    const [thresholdDefault, setThresholdDefault] = useState(0.4)
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: thresholdDefault,
-    })
-    const [isViewed, setIsViewed] = useState(false)
-    useEffect(() => {
-        if (inView) {
-            setIsViewed((prevState) => true)
-            setCurrentSection(1)
-            setThresholdDefault(0.5)
-        }
-    }, [inView])
 
     const skillList = {
         programming: [
@@ -49,18 +37,14 @@ export default function About() {
     }
 
     return (
-        <div
-            className={
-                styles.container + (isViewed ? ' uhiddenOp' : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.5}
+            initialThresholdValue={0.4}
+            animationName="animation_slideUp100s1"
+            section={1}
+            defaultClassname={styles.container}
         >
-            <div
-                className={
-                    styles.titleContainer +
-                    (isViewed ? ' animation_slideUp100s1 aimation_delay12' : '')
-                }
-            >
+            <div className={styles.titleContainer}>
                 <h1 className={styles.title}>
                     About me<i>.</i>
                 </h1>
@@ -75,25 +59,17 @@ export default function About() {
                     that.
                 </div>
             </div>
-
-            <div
-                className={
-                    styles.subtitleContainer +
-                    (isViewed
-                        ? ' animation_slideUp100s14 aimation_delay12'
-                        : '')
-                }
+            <ScrollTrigger
+                animationName="animation_slideUp100s14"
+                section={1}
+                defaultClassname={styles.subtitleContainer}
             >
                 <h1 className={styles.subtitle}>Technologies I work with</h1>
-            </div>
-
-            <div
-                className={
-                    styles.frameworksContainer +
-                    (isViewed
-                        ? ' animation_slideUp100s18 aimation_delay12'
-                        : '')
-                }
+            </ScrollTrigger>
+            <ScrollTrigger
+                animationName="animation_slideUp100s18"
+                section={1}
+                defaultClassname={styles.frameworksContainer}
             >
                 <div className={styles.skillGroupContainer}>
                     <h1 className={styles.skillGroupTitle}>
@@ -174,7 +150,7 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </div>
+            </ScrollTrigger>
+        </ScrollTrigger>
     )
 }

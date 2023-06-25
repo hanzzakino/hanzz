@@ -99,11 +99,13 @@ button {
     transition: 0.5s;
 }
 
-.hiddenOp > div {
-    opacity: 0%;
+.hiddenOp > * {
+    visibility: hidden;
+    animation-fill-mode: forwards;
 }
-.unhiddenOp > div {
-    opacity: 100%;
+.unhiddenOp > * {
+    animation-fill-mode: forwards;
+    visibility: visible;
 }
 
 /* @media only screen and (max-width: 720px) {

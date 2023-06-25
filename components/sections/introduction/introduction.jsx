@@ -9,34 +9,25 @@ import {
 } from 'react-icons/bs'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
+import ScrollTrigger from '../../shared/scrollTrigger'
 
 export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: 0.5,
-    })
-    const [isViewed, setIsViewed] = useState(false)
-    useEffect(() => {
-        if (inView) {
-            setIsViewed((prevState) => true)
-            setCurrentSection(0)
-        }
-    }, [inView])
-
     return (
-        <div
-            className={
-                styles.container + (isViewed ? ' uhiddenOp' : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.5}
+            initialThresholdValue={0.5}
+            animationName="animation_slideUp100s1"
+            section={0}
+            defaultClassname={styles.container}
         >
             <div className={styles.group1}>
-                <div
-                    className={
-                        styles.group1_img +
-                        (isViewed ? ' animation_slideUp100s1' : '')
-                    }
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.group1_img}
                 >
                     <img
                         className={styles.group1_me}
@@ -53,53 +44,50 @@ export default function Introduction() {
                         className={styles.group1_blue}
                         src="/assets/intro/blue-gradient-bg.svg"
                     />
-                </div>
-                <div className={styles.group1_msg}>
-                    <h1
-                        className={
-                            styles.group1_msg1 +
-                            (isViewed ? ' animation_slideLeft100s15' : '')
-                        }
-                    >
-                        Hi! I'm
-                    </h1>
+                </ScrollTrigger>
 
-                    <h1
-                        className={
-                            styles.accent1 +
-                            ' ' +
-                            styles.group1_msg2 +
-                            (isViewed ? ' animation_slideLeft100s17' : '')
-                        }
+                <div className={styles.group1_msg}>
+                    <ScrollTrigger
+                        animationName="animation_slideLeft100s15"
+                        section={0}
                     >
-                        Hanz Aquino<span className={styles.accent2}>.</span>
-                    </h1>
-                    <p
-                        className={
-                            styles.group1_msg3 +
-                            (isViewed ? ' animation_slideLeft100s20' : '')
-                        }
+                        <h1 className={styles.group1_msg1}>Hi! I'm</h1>
+                    </ScrollTrigger>
+
+                    <ScrollTrigger
+                        animationName="animation_slideLeft100s17"
+                        section={0}
                     >
-                        I'm a <b>Computer Engineer / Programmer </b>
-                        and I convert{' '}
-                        <span className={styles.accent2}>ideas</span> and{' '}
-                        <span className={styles.accent2}>creativity</span> into
-                        a piece of technology.
-                    </p>
-                    <p
-                        className={
-                            styles.group1_msg4 +
-                            (isViewed ? ' animation_slideLeft100s20' : '')
-                        }
+                        <h1
+                            className={
+                                styles.accent1 + ' ' + styles.group1_msg2
+                            }
+                        >
+                            Hanz Aquino<span className={styles.accent2}>.</span>
+                        </h1>
+                    </ScrollTrigger>
+                    <ScrollTrigger
+                        animationName="animation_slideLeft100s20"
+                        section={0}
                     >
-                        Also, a&nbsp;
-                        <nobr className={styles.multiTalent}></nobr>
-                    </p>
-                    <div
-                        className={
-                            styles.group1_social +
-                            (isViewed ? ' animation_popUps2' : '')
-                        }
+                        <p className={styles.group1_msg3}>
+                            I'm a <b>Computer Engineer / Programmer </b>
+                            and I convert{' '}
+                            <span className={styles.accent2}>
+                                ideas
+                            </span> and{' '}
+                            <span className={styles.accent2}>creativity</span>{' '}
+                            into a piece of technology.
+                        </p>
+                        <p className={styles.group1_msg4}>
+                            Also, a&nbsp;
+                            <nobr className={styles.multiTalent}></nobr>
+                        </p>
+                    </ScrollTrigger>
+                    <ScrollTrigger
+                        animationName="animation_popUps2"
+                        section={0}
+                        defaultClassname={styles.group1_social}
                     >
                         <a
                             href="https://github.com/hanzzakino"
@@ -141,9 +129,9 @@ export default function Introduction() {
                             <BsEnvelopeFill className={styles.icon} />
                             {/* <span className={styles.tooltiptext}>Email</span> */}
                         </a>
-                    </div>
+                    </ScrollTrigger>
                 </div>
             </div>
-        </div>
+        </ScrollTrigger>
     )
 }
