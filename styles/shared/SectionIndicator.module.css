@@ -6,8 +6,8 @@
     align-items: center;
     flex-flow: column;
     justify-content: center;
-    /* background-color: white; */
     animation: slowShow 1.2s ease-in;
+    top: 0;
     right: 0;
     margin-right: 2vw;
 }
