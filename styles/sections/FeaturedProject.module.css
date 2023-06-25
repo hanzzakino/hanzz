@@ -34,6 +34,8 @@
     overflow: visible !important;
     filter: saturate(100%) sepia(0%) hue-rotate(0)
         drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+    -webkit-filter: saturate(100%) sepia(0%) hue-rotate(0)
+        drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     transition: 0.3s ease-out;
 }
 .image1 {
@@ -42,9 +44,15 @@
 }
 .imageContainer:hover {
     filter: brightness(80%) saturate(0%) sepia(100%) hue-rotate(178deg);
+    -webkit-filter: brightness(80%) saturate(0%) sepia(100%) hue-rotate(178deg);
     transform: scale(1.02);
     transition: 0.3s ease-out;
 }
+
+/* .projectContainer:hover .projectTitle {
+    color: var(--accent-color-1) !important;
+    transition: 0.1s ease-out;
+} */
 .projectTitleContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -64,6 +72,7 @@
     color: var(--light-accent-3);
     font-size: 2.3rem;
     letter-spacing: 1px;
+    transition: 0.1s ease-out;
 }
 .projectDescription {
     font-size: 1.2rem;
@@ -87,6 +96,7 @@
     width: 24px;
     height: 24px;
     filter: saturate(0%);
+    -webkit-filter: saturate(0%);
 }
 .techContainer > p {
     position: absolute;
@@ -96,6 +106,7 @@
 }
 .techContainer:hover > .techIcon {
     filter: saturate(100%);
+    -webkit-filter: saturate(100%);
 }
 .techContainer:hover > p {
     visibility: visible;

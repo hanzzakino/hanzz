@@ -11,7 +11,7 @@
     flex-direction: column;
 }
 .line1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 1.1rem;
 }
 .line2 {

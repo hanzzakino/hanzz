@@ -3,22 +3,10 @@ import { useSettingsContext } from '../../../context/SettingsContext'
 import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
+import ScrollTrigger from '../../shared/scrollTrigger'
 
 export default function About() {
     const { theme, setCurrentSection } = useSettingsContext()
-    const [thresholdDefault, setThresholdDefault] = useState(0.4)
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: thresholdDefault,
-    })
-    const [isViewed, setIsViewed] = useState(false)
-    useEffect(() => {
-        if (inView) {
-            setIsViewed((prevState) => true)
-            setCurrentSection(1)
-            setThresholdDefault(0.5)
-        }
-    }, [inView])
 
     const skillList = {
         programming: [
@@ -49,51 +37,53 @@ export default function About() {
     }
 
     return (
-        <div
-            className={
-                styles.container + (isViewed ? ' uhiddenOp' : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.3}
+            initialThresholdValue={0.2}
+            animationName="animation_slideUp100s1"
+            section={1}
+            defaultClassname={styles.container}
         >
-            <div
-                className={
-                    styles.titleContainer +
-                    (isViewed ? ' animation_slideUp100s1 aimation_delay12' : '')
-                }
-            >
-                <h1 className={styles.title}>
-                    About me<i>.</i>
-                </h1>
-                <div className={styles.intro}>
-                    Hello! My Name is Hanz Christian Aquino, a Computer Engineer
-                    and I enjoy programming and developing softwares. <br />
+            <div className={styles.titleContainer}>
+                <h1 className={styles.title}>About me</h1>
+                <ScrollTrigger
+                    animationName="animation_slideUp100s14"
+                    section={1}
+                    defaultClassname={styles.subtitleContainer}
+                >
+                    <h1 className={styles.subtitle}>
+                        LET ME <strong>INTRODUCE</strong> MYSELF
+                    </h1>
+                </ScrollTrigger>
+                <ScrollTrigger
+                    animationName="animation_slideUp100s14"
+                    section={1}
+                    defaultClassname={styles.intro}
+                >
+                    My Name is <strong>Hanz Christian Aquino</strong>, a
+                    <strong> Computer Engineer</strong> and I enjoy programming
+                    and developing softwares. <br />
                     Driven by fascination and curiosity about how a computer
-                    works, I started to learn programming in 2017. I was amazed
-                    by the idea that I could instruct a computer to do certain
-                    task. I loved the challenge of analytical and mathematical
-                    problem solving, and I found programming as a great tool for
-                    that.
-                </div>
+                    works, I started to learn programming in
+                    <strong> 2017</strong>. I was amazed by the idea that I
+                    could instruct a computer to do certain task. I loved the
+                    challenge of analytical and mathematical problem solving,
+                    and I found programming as a great tool for that.
+                </ScrollTrigger>
             </div>
-
-            <div
-                className={
-                    styles.subtitleContainer +
-                    (isViewed
-                        ? ' animation_slideUp100s14 aimation_delay12'
-                        : '')
-                }
+            <ScrollTrigger
+                animationName="animation_slideUp100s14"
+                section={1}
+                defaultClassname={styles.subtitleContainer}
             >
-                <h1 className={styles.subtitle}>Technologies I work with</h1>
-            </div>
-
-            <div
-                className={
-                    styles.frameworksContainer +
-                    (isViewed
-                        ? ' animation_slideUp100s18 aimation_delay12'
-                        : '')
-                }
+                <h1 className={styles.subtitle}>
+                    <strong>TECHNOLOGIES</strong> I WORK WITH
+                </h1>
+            </ScrollTrigger>
+            <ScrollTrigger
+                animationName="animation_slideUp100s18"
+                section={1}
+                defaultClassname={styles.frameworksContainer}
             >
                 <div className={styles.skillGroupContainer}>
                     <h1 className={styles.skillGroupTitle}>
@@ -111,6 +101,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={lang.name}
+                                    key={lang.name + '0001a'}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -136,6 +127,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={framework.name}
+                                    key={framework.name + '0001b'}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -163,6 +155,7 @@ export default function About() {
                                     width={64}
                                     height={64}
                                     alt={framework.name}
+                                    key={framework.name + '0001c'}
                                 />
                                 <p
                                     className={styles.skillName}
@@ -174,7 +167,7 @@ export default function About() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </div>
+            </ScrollTrigger>
+        </ScrollTrigger>
     )
 }

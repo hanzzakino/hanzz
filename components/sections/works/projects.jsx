@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import FeaturedProject from './featuredProject'
 import OtherProject from './otherProject'
+import ScrollTrigger from '../../shared/scrollTrigger'
 
 const featuredProjectsList = [
     {
@@ -88,97 +89,67 @@ const otherProjectsList = [
     },
 ]
 const featuredProjects = () => {
-    const { theme, setCurrentSection } = useSettingsContext()
-    const [thresholdDefault, setThresholdDefault] = useState(0) // vary
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: thresholdDefault,
-    })
-    const [isViewed, setIsViewed] = useState(false)
-    useEffect(() => {
-        if (inView) {
-            setIsViewed((prevState) => true)
-            setCurrentSection(2) // vary
-            setThresholdDefault(0.1)
-        }
-    }, [inView])
+    const { theme } = useSettingsContext()
 
     return (
-        <div
-            className={
-                styles.container + (isViewed ? ' uhiddenOp' : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.1}
+            initialThresholdValue={0}
+            section={2}
+            defaultClassname={styles.container}
         >
-            <div
-                className={
-                    styles.titleContainer +
-                    (isViewed ? ' animation_slideUp100s1' : '')
-                }
+            <ScrollTrigger
+                section={2}
+                animationName="animation_slideUp100s1"
+                defaultClassname={styles.titleContainer}
             >
-                <h1 className={styles.title}>
-                    My Works<i>.</i>
+                <h1 className={styles.title}>My Projects</h1>
+            </ScrollTrigger>
+            <ScrollTrigger
+                section={2}
+                animationName="animation_slideUp100s1"
+                defaultClassname={styles.subtitleContainer}
+            >
+                <h1 className={styles.subtitle}>
+                    <strong>FEATURED</strong> PROJECTS
                 </h1>
-            </div>
-            <div
-                className={
-                    styles.subtitleContainer +
-                    (isViewed ? ' animation_slideUp100s1 aimation_delay15' : '')
-                }
-            >
-                <h1 className={styles.subtitle}>Featured Projects</h1>
-            </div>
+            </ScrollTrigger>
             <div className={styles.projectsMainContainer}>
                 {featuredProjectsList.map((project, index) => (
                     <FeaturedProject
-                        key={project.title + '__'}
+                        key={project.title + '__2000'}
                         index={index}
                         content={project}
                     />
                 ))}
             </div>
-        </div>
+        </ScrollTrigger>
     )
 }
 
 const otherProjects = () => {
     const { theme, setCurrentSection } = useSettingsContext()
-    const [thresholdDefault, setThresholdDefault] = useState(0) // vary
-    const { ref, inView } = useInView({
-        /* Optional options */
-        threshold: thresholdDefault,
-    })
-    const [isViewed, setIsViewed] = useState(false)
-    useEffect(() => {
-        if (inView) {
-            setIsViewed((prevState) => true)
-            setCurrentSection(2) // vary
-            setThresholdDefault(0.1)
-        }
-    }, [inView])
 
     return (
-        <div
-            className={
-                styles.otherContainer + (isViewed ? ' uhiddenOp' : ' hiddenOp')
-            }
-            ref={ref}
+        <ScrollTrigger
+            thresholdValue={0.1}
+            initialThresholdValue={0}
+            animationName="animation_slideUp100s1 aimation_delay15"
+            section={2}
+            defaultClassname={styles.otherContainer}
         >
-            <div
-                className={
-                    styles.subtitleContainer +
-                    (isViewed ? ' animation_slideUp100s1 aimation_delay15' : '')
-                }
-            >
-                <h1 className={styles.subtitle}>Other Projects</h1>
+            <div className={styles.subtitleContainer}>
+                <h1 className={styles.subtitle}>
+                    <strong>OTHER</strong> PROJECTS
+                </h1>
             </div>
 
             <div className={styles.otherProjectsMainContainer}>
                 {otherProjectsList.map((project, index) => (
-                    <OtherProject content={project} />
+                    <OtherProject content={project} key={index} />
                 ))}
             </div>
-        </div>
+        </ScrollTrigger>
     )
 }
 
