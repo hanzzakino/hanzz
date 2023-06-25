@@ -14,7 +14,7 @@
 }
 
 .title {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 2.4rem;
     color: var(--accent-color-1);
     letter-spacing: 1px;
@@ -43,7 +43,7 @@
     letter-spacing: 1px;
     line-height: 2.4rem;
     /* text-align: right; */
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .skillGroupContainer {

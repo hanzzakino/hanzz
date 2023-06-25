@@ -62,7 +62,7 @@
 
 .group1_msg1,
 .group1_msg2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--secondary-font);
     font-size: 3.8rem;
     line-height: 3.8rem;
 }

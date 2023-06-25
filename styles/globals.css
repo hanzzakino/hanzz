@@ -1,16 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Source+Sans+3:wght@400;600;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Source+Sans+3:wght@400;600;700;900&display=swap'); */
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Source Sans 3', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&family=Montserrat:wght@400;600;700;900&family=Poppins:wght@400;700;900&family=Source+Sans+3:wght@400;600;700;900&display=swap');
 
 html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans 3', Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans 3', 'Inter', 'Montserrat', Arial, Helvetica,
+        sans-serif;
     font-size: 14px;
     scroll-behavior: smooth;
 }
 :root {
+    --secondary-font: 'Poppins', sans-serif;
+
     --accent-color-1: #20bde8;
     --accent-color-2: #fd5565;
 
