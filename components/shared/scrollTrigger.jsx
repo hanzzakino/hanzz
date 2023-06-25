@@ -32,7 +32,9 @@ export default function ScrollTrigger({
         <div
             className={
                 defaultClassname +
-                (isViewed ? ' uhiddenOp ' + animationName + ' ' : ' hiddenOp ')
+                (isViewed
+                    ? ' visibleContents ' + animationName + ' '
+                    : ' hiddenContents ')
             }
             ref={ref}
         >

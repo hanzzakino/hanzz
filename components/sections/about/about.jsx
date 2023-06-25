@@ -38,8 +38,8 @@ export default function About() {
 
     return (
         <ScrollTrigger
-            thresholdValue={0.5}
-            initialThresholdValue={0.4}
+            thresholdValue={0.3}
+            initialThresholdValue={0.2}
             animationName="animation_slideUp100s1"
             section={1}
             defaultClassname={styles.container}

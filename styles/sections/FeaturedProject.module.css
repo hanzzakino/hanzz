@@ -45,6 +45,11 @@
     transform: scale(1.02);
     transition: 0.3s ease-out;
 }
+
+/* .projectContainer:hover .projectTitle {
+    color: var(--accent-color-1) !important;
+    transition: 0.1s ease-out;
+} */
 .projectTitleContainer {
     display: flex;
     flex-direction: column-reverse;
@@ -64,6 +69,7 @@
     color: var(--light-accent-3);
     font-size: 2.3rem;
     letter-spacing: 1px;
+    transition: 0.1s ease-out;
 }
 .projectDescription {
     font-size: 1.2rem;
