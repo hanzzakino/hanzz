@@ -1,29 +1,56 @@
 .aimation_delay02 {
     animation-delay: 0.2s;
+    -o-animation-delay: 0.2s;
+    -moz-animation-delay: 0.2s;
+    -webkit-animation-delay: 0.2s;
 }
 .aimation_delay05 {
     animation-delay: 0.5s;
+    -o-animation-delay: 0.5s;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
 }
 .aimation_delay08 {
     animation-delay: 0.8s;
+    -o-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
 }
 .aimation_delay10 {
     animation-delay: 1s;
+    -o-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -webkit-animation-delay: 1s;
 }
 .aimation_delay12 {
     animation-delay: 1.2s;
+    -o-animation-delay: 1.2s;
+    -moz-animation-delay: 1.2s;
+    -webkit-animation-delay: 1.2s;
 }
 .aimation_delay15 {
     animation-delay: 1.5s;
+    -o-animation-delay: 1.5s;
+    -moz-animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
 }
 .animation_slideUp100s1 {
     animation: slideUp100 1s ease-out;
+    -o-animation: slideUp100 1s ease-out;
+    -moz-animation: slideUp100 1s ease-out;
+    -webkit-animation: slideUp100 1s ease-out;
 }
 .animation_slideUp100s14 {
     animation: slideUp100 1.4s ease-out;
+    -o-animation: slideUp100 1.4s ease-out;
+    -moz-animation: slideUp100 1.4s ease-out;
+    -webkit-animation: slideUp100 1.4s ease-out;
 }
 .animation_slideUp100s18 {
     animation: slideUp100 1.8s ease-out;
+    -o-animation: slideUp100 1.8s ease-out;
+    -moz-animation: slideUp100 1.8s ease-out;
+    -webkit-animation: slideUp100 1.8s ease-out;
 }
 @keyframes slideUp100 {
     0% {
@@ -43,12 +70,21 @@
 }
 .animation_slideLeft100s15 {
     animation: slideLeft100d1 1.5s ease-out;
+    -o-animation: slideLeft100d1 1.5s ease-out;
+    -moz-animation: slideLeft100d1 1.5s ease-out;
+    -webkit-animation: slideLeft100d1 1.5s ease-out;
 }
 .animation_slideLeft100s17 {
     animation: slideLeft100d1 1.7s ease-out;
+    -o-animation: slideLeft100d1 1.7s ease-out;
+    -moz-animation: slideLeft100d1 1.7s ease-out;
+    -webkit-animation: slideLeft100d1 1.7s ease-out;
 }
 .animation_slideLeft100s20 {
     animation: slideLeft100d1 2s ease-out;
+    -o-animation: slideLeft100d1 2s ease-out;
+    -moz-animation: slideLeft100d1 2s ease-out;
+    -webkit-animation: slideLeft100d1 2s ease-out;
 }
 @keyframes slideLeft100d1 {
     0% {
@@ -68,6 +104,9 @@
 }
 .animation_popUps2 {
     animation: popUp 2s ease-out;
+    -o-animation: popUp 2s ease-out;
+    -moz-animation: popUp 2s ease-out;
+    -webkit-animation: popUp 2s ease-out;
 }
 @keyframes popUp {
     0% {
@@ -80,6 +119,23 @@
 
     100% {
         transform: translateX(0px);
+        opacity: 100%;
+    }
+}
+.animation_slowShow {
+    animation: slowShow 1.2s ease-in;
+    -o-animation: slowShow 1.2s ease-in;
+    -moz-animation: slowShow 1.2s ease-in;
+    -webkit-animation: slowShow 1.2s ease-in;
+}
+@keyframes slowShow {
+    0% {
+        opacity: 0%;
+    }
+    60% {
+        opacity: 0%;
+    }
+    100% {
         opacity: 100%;
     }
 }

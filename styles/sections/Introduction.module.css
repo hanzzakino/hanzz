@@ -181,18 +181,26 @@
 
 .multiTalent {
     position: absolute;
-    animation: continuousTextReplace;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.19, 0.96);
+    animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96) 0s
+        infinite;
+    -o-animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96) 0s
+        infinite;
+    -moz-animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96)
+        0s infinite;
+    -webkit-animation: continuousTextReplace 20s
+        cubic-bezier(0.42, 0, 0.19, 0.96) 0s infinite;
 }
 .multiTalent:after {
     position: absolute;
     content: ' ';
-    animation: continuousTextReplace;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: cubic-bezier(0.42, 0, 0.19, 0.96);
+    animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96) 0s
+        infinite;
+    -o-animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96) 0s
+        infinite;
+    -moz-animation: continuousTextReplace 20s cubic-bezier(0.42, 0, 0.19, 0.96)
+        0s infinite;
+    -webkit-animation: continuousTextReplace 20s
+        cubic-bezier(0.42, 0, 0.19, 0.96) 0s infinite;
 }
 /* 
 Graphics Designer, 3D Artist,

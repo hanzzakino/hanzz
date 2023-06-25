@@ -6,7 +6,6 @@
     align-items: center;
     flex-flow: column;
     justify-content: center;
-    animation: slowShow 1.2s ease-in;
     top: 0;
     right: 0;
     margin-right: 2vw;
@@ -21,17 +20,6 @@
     }
 }
 */
-@keyframes slowShow {
-    0% {
-        opacity: 0%;
-    }
-    60% {
-        opacity: 0%;
-    }
-    100% {
-        opacity: 100%;
-    }
-}
 
 .indicatorContainer {
     display: flex;

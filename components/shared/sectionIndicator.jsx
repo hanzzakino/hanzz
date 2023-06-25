@@ -6,7 +6,7 @@ export default function SectionIndicator() {
     const { theme, sections } = useSettingsContext()
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container + ' animation_slowShow'}>
             {/* <div className={styles.leftLine2}></div> */}
             <div>
                 {sections.sectionList &&
