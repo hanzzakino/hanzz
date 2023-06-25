@@ -30,10 +30,6 @@ export default function Introduction() {
                     defaultClassname={styles.group1_img}
                 >
                     <img
-                        className={styles.group1_me}
-                        src="/assets/intro/hanz.png"
-                    />
-                    <img
                         className={styles.group1_gray}
                         style={{
                             opacity: theme == 'dark' ? 0.1 : 0.7,
@@ -43,6 +39,10 @@ export default function Introduction() {
                     <img
                         className={styles.group1_blue}
                         src="/assets/intro/blue-gradient-bg.svg"
+                    />
+                    <img
+                        className={styles.group1_me}
+                        src="/assets/intro/hanz.png"
                     />
                 </ScrollTrigger>
 

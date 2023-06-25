@@ -60,3 +60,19 @@
     align-items: center;
     justify-content: space-between;
 }
+
+@media only screen and (max-width: 820px) {
+    .title {
+        font-size: 2.4rem;
+    }
+    .subtitle {
+        font-size: 1.5rem;
+    }
+    .container {
+        /* background-color: var(--accent-color-2); */
+        height: fit-content;
+        padding: 12px 10% 0 10%;
+        width: 100%;
+        margin-top: 36px;
+    }
+}
