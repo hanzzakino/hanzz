@@ -45,9 +45,7 @@ export default function About() {
             defaultClassname={styles.container}
         >
             <div className={styles.titleContainer}>
-                <h1 className={styles.title}>
-                    About me<i>.</i>
-                </h1>
+                <h1 className={styles.title}>About me</h1>
                 <div className={styles.intro}>
                     Hello! My Name is Hanz Christian Aquino, a Computer Engineer
                     and I enjoy programming and developing softwares. <br />

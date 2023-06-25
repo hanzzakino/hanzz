@@ -20,9 +20,9 @@
     letter-spacing: 1px;
     margin: 12px 0px;
 }
-.title i {
+.title::after {
+    content: '.';
     color: var(--accent-color-2);
-    font-style: normal;
 }
 .subtitleContainer {
     margin: 36px 0px;

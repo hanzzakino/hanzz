@@ -66,6 +66,10 @@
     font-size: 3.8rem;
     line-height: 3.8rem;
 }
+.group1_msg2::after {
+    content: '.';
+    color: var(--accent-color-2);
+}
 .accent1 {
     color: var(--accent-color-1);
 }

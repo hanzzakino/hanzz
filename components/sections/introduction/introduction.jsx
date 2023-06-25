@@ -63,7 +63,7 @@ export default function Introduction() {
                                 styles.accent1 + ' ' + styles.group1_msg2
                             }
                         >
-                            Hanz Aquino<span className={styles.accent2}>.</span>
+                            Hanz Aquino
                         </h1>
                     </ScrollTrigger>
                     <ScrollTrigger
