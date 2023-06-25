@@ -34,14 +34,16 @@
 }
 .subtitle {
     color: var(--light-accent-3);
-    font-size: 1.8rem;
-    border-bottom: 5px solid var(--accent-color-1);
+    font-size: 1.6rem;
+    font-weight: 400;
+    border-bottom: 3px solid var(--accent-color-1);
 }
 
 .intro {
     font-size: 1.2rem;
     letter-spacing: 1px;
     line-height: 2.4rem;
+    margin-bottom: 16px;
     /* text-align: right; */
     /* text-align: justify; */
 }

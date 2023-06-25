@@ -110,7 +110,9 @@ const featuredProjects = () => {
                 animationName="animation_slideUp100s1"
                 defaultClassname={styles.subtitleContainer}
             >
-                <h1 className={styles.subtitle}>Featured Projects</h1>
+                <h1 className={styles.subtitle}>
+                    <strong>FEATURED</strong> PROJECTS
+                </h1>
             </ScrollTrigger>
             <div className={styles.projectsMainContainer}>
                 {featuredProjectsList.map((project, index) => (
@@ -137,7 +139,9 @@ const otherProjects = () => {
             defaultClassname={styles.otherContainer}
         >
             <div className={styles.subtitleContainer}>
-                <h1 className={styles.subtitle}>Other Projects</h1>
+                <h1 className={styles.subtitle}>
+                    <strong>OTHER</strong> PROJECTS
+                </h1>
             </div>
 
             <div className={styles.otherProjectsMainContainer}>

@@ -46,23 +46,39 @@ export default function About() {
         >
             <div className={styles.titleContainer}>
                 <h1 className={styles.title}>About me</h1>
-                <div className={styles.intro}>
-                    Hello! My Name is Hanz Christian Aquino, a Computer Engineer
-                    and I enjoy programming and developing softwares. <br />
+                <ScrollTrigger
+                    animationName="animation_slideUp100s14"
+                    section={1}
+                    defaultClassname={styles.subtitleContainer}
+                >
+                    <h1 className={styles.subtitle}>
+                        LET ME <strong>INTRODUCE</strong> MYSELF
+                    </h1>
+                </ScrollTrigger>
+                <ScrollTrigger
+                    animationName="animation_slideUp100s14"
+                    section={1}
+                    defaultClassname={styles.intro}
+                >
+                    My Name is <strong>Hanz Christian Aquino</strong>, a
+                    <strong> Computer Engineer</strong> and I enjoy programming
+                    and developing softwares. <br />
                     Driven by fascination and curiosity about how a computer
-                    works, I started to learn programming in 2017. I was amazed
-                    by the idea that I could instruct a computer to do certain
-                    task. I loved the challenge of analytical and mathematical
-                    problem solving, and I found programming as a great tool for
-                    that.
-                </div>
+                    works, I started to learn programming in
+                    <strong> 2017</strong>. I was amazed by the idea that I
+                    could instruct a computer to do certain task. I loved the
+                    challenge of analytical and mathematical problem solving,
+                    and I found programming as a great tool for that.
+                </ScrollTrigger>
             </div>
             <ScrollTrigger
                 animationName="animation_slideUp100s14"
                 section={1}
                 defaultClassname={styles.subtitleContainer}
             >
-                <h1 className={styles.subtitle}>Technologies I work with</h1>
+                <h1 className={styles.subtitle}>
+                    <strong>TECHNOLOGIES</strong> I WORK WITH
+                </h1>
             </ScrollTrigger>
             <ScrollTrigger
                 animationName="animation_slideUp100s18"
