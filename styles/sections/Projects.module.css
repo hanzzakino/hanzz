@@ -15,6 +15,7 @@
     position: relative;
     margin-top: 36px;
     padding: 0 16% 48px 16% !important;
+    overflow: hidden;
 }
 .title {
     font-family: var(--secondary-font);
