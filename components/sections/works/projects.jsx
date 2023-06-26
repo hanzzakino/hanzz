@@ -92,7 +92,7 @@ const featuredProjects = () => {
     const { theme } = useSettingsContext()
 
     return (
-        <div className={styles.container}>
+        <div>
             <ScrollTrigger
                 section={2}
                 animationName="animation_slideUp100s1"
@@ -126,7 +126,7 @@ const otherProjects = () => {
     const { theme, setCurrentSection } = useSettingsContext()
 
     return (
-        <div className={styles.otherContainer}>
+        <div>
             <ScrollTrigger
                 section={2}
                 animationName="animation_slideUp100s1"
@@ -148,9 +148,9 @@ const otherProjects = () => {
 
 export default function Projects() {
     return (
-        <>
+        <div className={styles.container}>
             {featuredProjects()}
             {otherProjects()}
-        </>
+        </div>
     )
 }
