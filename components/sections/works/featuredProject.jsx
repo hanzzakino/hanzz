@@ -55,27 +55,25 @@ export default function FeaturedProject({ content, index }) {
                     <p className={styles.projectDescription}>
                         {content.description}
                     </p>
-                    <div>
-                        <ul className={styles.projectTech}>
-                            {content.technologiesUsed.map((tech) => (
-                                <div
-                                    className={styles.techContainer}
-                                    key={tech + content.title + '__001'}
-                                >
-                                    <Image
-                                        className={styles.techIcon}
-                                        src={techInfo[tech].iconUrl}
-                                        width={64}
-                                        height={64}
-                                        alt={tech}
-                                        key={tech + content.title + '__001a'}
-                                    />
-                                    <p key={tech + content.title + '__002'}>
-                                        {techInfo[tech].name}
-                                    </p>
-                                </div>
-                            ))}
-                        </ul>
+                    <div className={styles.projectTech}>
+                        {content.technologiesUsed.map((tech) => (
+                            <div
+                                className={styles.techContainer}
+                                key={tech + content.title + '__001'}
+                            >
+                                <Image
+                                    className={styles.techIcon}
+                                    src={techInfo[tech].iconUrl}
+                                    width={64}
+                                    height={64}
+                                    alt={tech}
+                                    key={tech + content.title + '__001a'}
+                                />
+                                <p key={tech + content.title + '__002'}>
+                                    {techInfo[tech].name}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className={styles.imageContainer}>
