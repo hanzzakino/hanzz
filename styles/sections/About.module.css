@@ -25,6 +25,7 @@
     color: var(--accent-color-2);
 }
 .subtitleContainer {
+    position: relative;
     margin: 36px 0px;
     font-size: 2.1rem;
     display: flex;
@@ -49,6 +50,7 @@
 }
 
 .skillGroupContainer {
+    position: relative;
     background-color: #ffffff;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
     -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
@@ -86,6 +88,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    position: relative;
     /* filter: invert(100%); */
     /* mix-blend-mode: difference; */
 }
@@ -118,6 +121,7 @@
     flex: 50%;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 }
 
 .frameworksContainer > .skillGroupContainer {

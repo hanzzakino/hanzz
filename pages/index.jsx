@@ -31,20 +31,6 @@ export default function Home() {
                 <Introduction />
                 <About />
                 <Projects />
-                <div>
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                </div>
                 <Footer />
             </main>
         </div>

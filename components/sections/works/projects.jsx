@@ -92,12 +92,7 @@ const featuredProjects = () => {
     const { theme } = useSettingsContext()
 
     return (
-        <ScrollTrigger
-            thresholdValue={0.1}
-            initialThresholdValue={0}
-            section={2}
-            defaultClassname={styles.container}
-        >
+        <div className={styles.container}>
             <ScrollTrigger
                 section={2}
                 animationName="animation_slideUp100s1"
@@ -123,7 +118,7 @@ const featuredProjects = () => {
                     />
                 ))}
             </div>
-        </ScrollTrigger>
+        </div>
     )
 }
 
@@ -131,25 +126,23 @@ const otherProjects = () => {
     const { theme, setCurrentSection } = useSettingsContext()
 
     return (
-        <ScrollTrigger
-            thresholdValue={0.1}
-            initialThresholdValue={0}
-            animationName="animation_slideUp100s1 aimation_delay15"
-            section={2}
-            defaultClassname={styles.otherContainer}
-        >
-            <div className={styles.subtitleContainer}>
+        <div className={styles.otherContainer}>
+            <ScrollTrigger
+                section={2}
+                animationName="animation_slideUp100s1"
+                defaultClassname={styles.subtitleContainer}
+            >
                 <h1 className={styles.subtitle}>
                     <strong>OTHER</strong> PROJECTS
                 </h1>
-            </div>
+            </ScrollTrigger>
 
             <div className={styles.otherProjectsMainContainer}>
                 {otherProjectsList.map((project, index) => (
                     <OtherProject content={project} key={index} />
                 ))}
             </div>
-        </ScrollTrigger>
+        </div>
     )
 }
 

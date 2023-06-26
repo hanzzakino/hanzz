@@ -37,29 +37,29 @@ export default function About() {
     }
 
     return (
-        <ScrollTrigger
-            thresholdValue={0.3}
-            initialThresholdValue={0.2}
-            animationName="animation_slideUp100s1"
-            section={1}
-            defaultClassname={styles.container}
-        >
-            <div className={styles.titleContainer}>
+        <div className={styles.container}>
+            <ScrollTrigger
+                animationName="animation_slideUp100s14"
+                section={1}
+                defaultClassname={styles.titleContainer}
+            >
                 <h1 className={styles.title}>About me</h1>
-                <ScrollTrigger
-                    animationName="animation_slideUp100s14"
-                    section={1}
-                    defaultClassname={styles.subtitleContainer}
-                >
-                    <h1 className={styles.subtitle}>
-                        LET ME <strong>INTRODUCE</strong> MYSELF
-                    </h1>
-                </ScrollTrigger>
-                <ScrollTrigger
-                    animationName="animation_slideUp100s14"
-                    section={1}
-                    defaultClassname={styles.intro}
-                >
+            </ScrollTrigger>
+            <ScrollTrigger
+                animationName="animation_slideUp100s14"
+                section={1}
+                defaultClassname={styles.subtitleContainer}
+            >
+                <h1 className={styles.subtitle}>
+                    LET ME <strong>INTRODUCE</strong> MYSELF
+                </h1>
+            </ScrollTrigger>
+            <ScrollTrigger
+                animationName="animation_slideUp100s14"
+                section={1}
+                defaultClassname={styles.intro}
+            >
+                <p>
                     My Name is <strong>Hanz Christian Aquino</strong>, a
                     <strong> Computer Engineer</strong> and I enjoy programming
                     and developing softwares. <br />
@@ -69,8 +69,8 @@ export default function About() {
                     could instruct a computer to do certain task. I loved the
                     challenge of analytical and mathematical problem solving,
                     and I found programming as a great tool for that.
-                </ScrollTrigger>
-            </div>
+                </p>
+            </ScrollTrigger>
             <ScrollTrigger
                 animationName="animation_slideUp100s14"
                 section={1}
@@ -168,6 +168,6 @@ export default function About() {
                     </div>
                 </div>
             </ScrollTrigger>
-        </ScrollTrigger>
+        </div>
     )
 }

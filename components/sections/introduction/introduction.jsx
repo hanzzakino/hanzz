@@ -14,13 +14,7 @@ import ScrollTrigger from '../../shared/scrollTrigger'
 export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
     return (
-        <ScrollTrigger
-            thresholdValue={0.5}
-            initialThresholdValue={0.5}
-            animationName="animation_slideUp100s1"
-            section={0}
-            defaultClassname={styles.container}
-        >
+        <div className={styles.container}>
             <div className={styles.group1}>
                 <ScrollTrigger
                     thresholdValue={0}
@@ -132,6 +126,6 @@ export default function Introduction() {
                     </ScrollTrigger>
                 </div>
             </div>
-        </ScrollTrigger>
+        </div>
     )
 }
