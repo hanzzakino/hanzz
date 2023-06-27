@@ -22,23 +22,7 @@ export default function Introduction() {
                     animationName="animation_slideUp100s1"
                     section={0}
                     defaultClassname={styles.group1_img}
-                >
-                    <img
-                        className={styles.group1_gray}
-                        style={{
-                            opacity: theme == 'dark' ? 0.1 : 0.7,
-                        }}
-                        src="/assets/intro/gray-bg.svg"
-                    />
-                    <img
-                        className={styles.group1_blue}
-                        src="/assets/intro/blue-gradient-bg.svg"
-                    />
-                    <img
-                        className={styles.group1_me}
-                        src="/assets/intro/hanz.png"
-                    />
-                </ScrollTrigger>
+                ></ScrollTrigger>
 
                 <div className={styles.group1_msg}>
                     <ScrollTrigger
