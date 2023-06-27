@@ -78,7 +78,7 @@ export default function Introduction() {
                     <Image
                         height={500}
                         width={500}
-                        src={'/assets/background/shapes/me.svg'}
+                        src={'/assets/background/shapes/me2.svg'}
                         alt="box"
                         className={styles.myImg}
                     />

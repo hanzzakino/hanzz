@@ -6,7 +6,7 @@
     position: relative;
     flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* padding: 0 16% 0 16%; */
     max-height: 1080px;
 }

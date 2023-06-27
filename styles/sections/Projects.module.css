@@ -3,7 +3,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden;s */
     /* justify-content: center; */
     padding: 48px 0 0 0;
     max-width: 894px;
