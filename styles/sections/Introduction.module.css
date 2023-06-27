@@ -9,6 +9,9 @@
     overflow: hidden;
     /* padding: 0 16% 0 16%; */
 
+    background-image: url('/assets/background/shapes/Porfoltio-design-1.png');
+    background-size: cover;
+
     padding: 32px 16% 32px 16%;
     max-width: 2048px;
 }
