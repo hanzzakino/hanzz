@@ -9,8 +9,6 @@
     overflow: hidden;
     /* padding: 0 16% 0 16%; */
     max-height: 1080px;
-    /* background-image: url('/assets/background/shapes/Porfoltio-design-1.png');
-    background-size: cover; */
 }
 .shapeContainer1 {
     position: absolute;
@@ -32,6 +30,33 @@
     position: absolute;
     right: 35px;
     top: -52px;
+}
+.shapeContainer2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+}
+.shapeContainer2 .circleShape {
+    position: absolute;
+    top: 52px;
+    left: -122px;
+}
+.shapeContainer2 .curlyLine {
+    position: absolute;
+    left: -196px;
+    top: 10px;
+    transform: rotateZ(64deg);
+}
+.shapeContainer2 .boxShape {
+    position: absolute;
+    right: -150px;
+    top: 14px;
+}
+.shapeContainer2 .dotMatrix {
+    position: absolute;
+    right: -165px;
+    top: -1px;
 }
 .group1 {
     position: relative;

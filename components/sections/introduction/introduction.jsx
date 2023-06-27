@@ -17,7 +17,13 @@ export default function Introduction() {
     return (
         <div className={styles.container}>
             <div className={styles.group1}>
-                <div className={styles.shapeContainer1}>
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.shapeContainer1}
+                >
                     <Image
                         height={76}
                         width={76}
@@ -39,7 +45,8 @@ export default function Introduction() {
                         alt="dot matrix"
                         className={styles.curlyLine}
                     />
-                </div>
+                </ScrollTrigger>
+
                 <ScrollTrigger
                     thresholdValue={0}
                     initialThresholdValue={0}
@@ -78,13 +85,18 @@ export default function Introduction() {
                 </ScrollTrigger>
 
                 <div className={styles.group1_msg}>
-                    <Image
-                        height={130}
-                        width={130}
-                        src={'/assets/background/shapes/circle-d5e4e8.svg'}
-                        alt="dot matrix"
-                        className={styles.circleShape}
-                    />
+                    <ScrollTrigger
+                        animationName="animation_slideLeft100s15"
+                        section={0}
+                        defaultClassname={styles.circleShape}
+                    >
+                        <Image
+                            height={130}
+                            width={130}
+                            src={'/assets/background/shapes/circle-d5e4e8.svg'}
+                            alt="dot matrix"
+                        />
+                    </ScrollTrigger>
                     <ScrollTrigger
                         animationName="animation_slideLeft100s15"
                         section={0}
@@ -169,6 +181,53 @@ export default function Introduction() {
                         </a>
                     </ScrollTrigger>
                 </div>
+
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.shapeContainer2}
+                >
+                    <Image
+                        height={54}
+                        width={54}
+                        src={'/assets/background/shapes/circle-ccd5d7.svg'}
+                        alt="dot matrix"
+                        className={styles.circleShape}
+                    />
+
+                    <Image
+                        height={14}
+                        width={140}
+                        src={'/assets/background/shapes/curly-line.svg'}
+                        alt="dot matrix"
+                        className={styles.curlyLine}
+                    />
+                </ScrollTrigger>
+
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.shapeContainer2}
+                >
+                    <Image
+                        height={100}
+                        width={100}
+                        src={'/assets/background/shapes/box-d5e4e8.svg'}
+                        alt="dot matrix"
+                        className={styles.boxShape}
+                    />
+                    <Image
+                        height={86}
+                        width={86}
+                        src={'/assets/background/shapes/4-dot-matrix.svg'}
+                        alt="dot matrix"
+                        className={styles.dotMatrix}
+                    />
+                </ScrollTrigger>
             </div>
         </div>
     )
