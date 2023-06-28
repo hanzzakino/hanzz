@@ -4,10 +4,10 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
-    padding: 32px 16% 32px 16%;
-    max-width: 2048px;
+    /* padding: 32px 16% 32px 16%; */
+    max-width: 894px;
     /* background-color: rgb(80, 161, 60); */
     /* background-color: rgb(255, 255, 255); */
     margin-top: 12px;

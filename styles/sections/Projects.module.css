@@ -3,10 +3,10 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    overflow: hidden;
+    /* overflow: hidden;s */
     /* justify-content: center; */
-    padding: 48px 16% 0 16%;
-    max-width: 2048px;
+    padding: 48px 0 0 0;
+    max-width: 894px;
     /* background-color: rgb(3, 31, 44); */
     /* background-color: rgb(255, 255, 255); */
     margin-top: 64px;

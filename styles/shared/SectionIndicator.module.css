@@ -38,8 +38,8 @@
     font-size: 0.75rem;
 }
 .unselectedIndicator {
-    -webkit-filter: blur(2px);
-    filter: blur(2px);
+    /* -webkit-filter: blur(2px);
+    filter: blur(2px); */
     opacity: 30%;
     transition: 0.45s ease-out;
 }

@@ -10,6 +10,7 @@ import {
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import ScrollTrigger from '../../shared/scrollTrigger'
+import Image from 'next/image'
 
 export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
@@ -21,26 +22,81 @@ export default function Introduction() {
                     initialThresholdValue={0}
                     animationName="animation_slideUp100s1"
                     section={0}
+                    defaultClassname={styles.shapeContainer1}
+                >
+                    <Image
+                        height={76}
+                        width={76}
+                        src={'/assets/background/shapes/circle-d5e4e8.svg'}
+                        alt="dot matrix"
+                        className={styles.circleShape}
+                    />
+                    <Image
+                        height={68}
+                        width={68}
+                        src={'/assets/background/shapes/box-ccd5d7.svg'}
+                        alt="dot matrix"
+                        className={styles.boxShape}
+                    />
+                    <Image
+                        height={14}
+                        width={140}
+                        src={'/assets/background/shapes/curly-line.svg'}
+                        alt="dot matrix"
+                        className={styles.curlyLine}
+                    />
+                </ScrollTrigger>
+
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
                     defaultClassname={styles.group1_img}
                 >
-                    <img
-                        className={styles.group1_gray}
-                        style={{
-                            opacity: theme == 'dark' ? 0.1 : 0.7,
-                        }}
-                        src="/assets/intro/gray-bg.svg"
+                    <Image
+                        height={100}
+                        width={100}
+                        src={'/assets/background/shapes/box-d5e4e8.svg'}
+                        alt="dot matrix"
+                        className={styles.boxShape}
                     />
-                    <img
-                        className={styles.group1_blue}
-                        src="/assets/intro/blue-gradient-bg.svg"
+                    <Image
+                        height={86}
+                        width={86}
+                        src={'/assets/background/shapes/4-dot-matrix.svg'}
+                        alt="dot matrix"
+                        className={styles.dotMatrix}
                     />
-                    <img
-                        className={styles.group1_me}
-                        src="/assets/intro/hanz.png"
+                    <Image
+                        height={86}
+                        width={86}
+                        src={'/assets/background/shapes/4-dot-matrix.svg'}
+                        alt="dot matrix"
+                        className={styles.dotMatrix2}
+                    />
+                    <Image
+                        height={500}
+                        width={500}
+                        src={'/assets/background/shapes/me2.svg'}
+                        alt="box"
+                        className={styles.myImg}
                     />
                 </ScrollTrigger>
 
                 <div className={styles.group1_msg}>
+                    <ScrollTrigger
+                        animationName="animation_slideLeft100s15"
+                        section={0}
+                        defaultClassname={styles.circleShape}
+                    >
+                        <Image
+                            height={130}
+                            width={130}
+                            src={'/assets/background/shapes/circle-d5e4e8.svg'}
+                            alt="dot matrix"
+                        />
+                    </ScrollTrigger>
                     <ScrollTrigger
                         animationName="animation_slideLeft100s15"
                         section={0}
@@ -125,6 +181,53 @@ export default function Introduction() {
                         </a>
                     </ScrollTrigger>
                 </div>
+
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.shapeContainer2}
+                >
+                    <Image
+                        height={54}
+                        width={54}
+                        src={'/assets/background/shapes/circle-ccd5d7.svg'}
+                        alt="dot matrix"
+                        className={styles.circleShape}
+                    />
+
+                    <Image
+                        height={14}
+                        width={140}
+                        src={'/assets/background/shapes/curly-line.svg'}
+                        alt="dot matrix"
+                        className={styles.curlyLine}
+                    />
+                </ScrollTrigger>
+
+                <ScrollTrigger
+                    thresholdValue={0}
+                    initialThresholdValue={0}
+                    animationName="animation_slideUp100s1"
+                    section={0}
+                    defaultClassname={styles.shapeContainer2}
+                >
+                    <Image
+                        height={100}
+                        width={100}
+                        src={'/assets/background/shapes/box-d5e4e8.svg'}
+                        alt="dot matrix"
+                        className={styles.boxShape}
+                    />
+                    <Image
+                        height={86}
+                        width={86}
+                        src={'/assets/background/shapes/4-dot-matrix.svg'}
+                        alt="dot matrix"
+                        className={styles.dotMatrix}
+                    />
+                </ScrollTrigger>
             </div>
         </div>
     )
