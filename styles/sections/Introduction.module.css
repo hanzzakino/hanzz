@@ -80,7 +80,7 @@
     /* overflow: hidden; */
     user-select: none;
 }
-.group1_img:hover .myImg {
+/* .group1_img:hover .myImg {
     transform: scale(1.02);
     transition: 0.5s ease-in-out;
 }
@@ -96,7 +96,7 @@
     transform: translateY(10px) translateX(10px);
     transition: 0.5s ease-in-out;
     transition-delay: 0.2s;
-}
+} */
 .group1_img > .dotMatrix {
     position: absolute;
     top: 42px;

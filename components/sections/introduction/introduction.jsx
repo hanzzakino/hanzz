@@ -81,6 +81,7 @@ export default function Introduction() {
                         src={'/assets/background/shapes/me2.svg'}
                         alt="box"
                         className={styles.myImg}
+                        priority
                     />
                 </ScrollTrigger>
 
