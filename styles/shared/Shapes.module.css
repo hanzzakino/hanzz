@@ -1,0 +1,56 @@
+.shapeContainer {
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+.Curl2Circle_circleShape {
+    width: 54px;
+    height: 54px;
+    position: relative;
+}
+.Curl2Circle_curlyLine {
+    height: 16px;
+    width: 160px;
+    position: relative;
+    left: -26px;
+    top: -18px;
+}
+
+.DotMatrixAndBox_boxShape {
+    position: relative;
+    width: 90px;
+    height: 90px;
+}
+.DotMatrixAndBox_dotMatrix {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 18px;
+    top: -18px;
+}
+
+.Curl2CircleBox_circleShape {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    right: -32px;
+    top: -32px;
+}
+.Curl2CircleBox_curlyLine {
+    height: 16px;
+    width: 160px;
+    position: relative;
+    top: -25px;
+    right: 18px;
+}
+.Curl2CircleBox_boxShape {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.circleShape {
+    position: relative;
+    width: 130px;
+    height: 130px;
+}

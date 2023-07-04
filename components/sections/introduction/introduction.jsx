@@ -11,6 +11,12 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import ScrollTrigger from '../../shared/scrollTrigger'
 import Image from 'next/image'
+import {
+    Curl2Circle,
+    DotMatrixAndBox,
+    Curl2CircleBox,
+    Circle,
+} from '../../shared/shapes'
 
 export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
@@ -24,27 +30,7 @@ export default function Introduction() {
                     section={0}
                     defaultClassname={styles.shapeContainer1}
                 >
-                    <Image
-                        height={76}
-                        width={76}
-                        src={'/assets/background/shapes/circle-d5e4e8.svg'}
-                        alt="dot matrix"
-                        className={styles.circleShape}
-                    />
-                    <Image
-                        height={68}
-                        width={68}
-                        src={'/assets/background/shapes/box-ccd5d7.svg'}
-                        alt="dot matrix"
-                        className={styles.boxShape}
-                    />
-                    <Image
-                        height={14}
-                        width={140}
-                        src={'/assets/background/shapes/curly-line.svg'}
-                        alt="dot matrix"
-                        className={styles.curlyLine}
-                    />
+                    <Curl2CircleBox transformStyle={styles.shape1} />
                 </ScrollTrigger>
 
                 <ScrollTrigger
@@ -55,29 +41,29 @@ export default function Introduction() {
                     defaultClassname={styles.group1_img}
                 >
                     <Image
-                        height={100}
-                        width={100}
+                        height={90}
+                        width={90}
                         src={'/assets/background/shapes/box-d5e4e8.svg'}
                         alt="dot matrix"
                         className={styles.boxShape}
                     />
                     <Image
-                        height={86}
-                        width={86}
+                        height={90}
+                        width={90}
                         src={'/assets/background/shapes/4-dot-matrix.svg'}
                         alt="dot matrix"
                         className={styles.dotMatrix}
                     />
                     <Image
-                        height={86}
-                        width={86}
+                        height={90}
+                        width={90}
                         src={'/assets/background/shapes/4-dot-matrix.svg'}
                         alt="dot matrix"
                         className={styles.dotMatrix2}
                     />
                     <Image
-                        height={500}
-                        width={500}
+                        height={350}
+                        width={300}
                         src={'/assets/background/shapes/me2.svg'}
                         alt="box"
                         className={styles.myImg}
@@ -91,12 +77,7 @@ export default function Introduction() {
                         section={0}
                         defaultClassname={styles.circleShape}
                     >
-                        <Image
-                            height={130}
-                            width={130}
-                            src={'/assets/background/shapes/circle-d5e4e8.svg'}
-                            alt="dot matrix"
-                        />
+                        <Circle />
                     </ScrollTrigger>
                     <ScrollTrigger
                         animationName="animation_slideLeft100s15"
@@ -138,6 +119,8 @@ export default function Introduction() {
                     <ScrollTrigger
                         animationName="animation_popUps2"
                         section={0}
+                        initialThresholdValue={0}
+                        thresholdValue={0}
                         defaultClassname={styles.group1_social}
                     >
                         <a
@@ -190,21 +173,7 @@ export default function Introduction() {
                     section={0}
                     defaultClassname={styles.shapeContainer2}
                 >
-                    <Image
-                        height={54}
-                        width={54}
-                        src={'/assets/background/shapes/circle-ccd5d7.svg'}
-                        alt="dot matrix"
-                        className={styles.circleShape}
-                    />
-
-                    <Image
-                        height={14}
-                        width={140}
-                        src={'/assets/background/shapes/curly-line.svg'}
-                        alt="dot matrix"
-                        className={styles.curlyLine}
-                    />
+                    <Curl2Circle transformStyle={styles.shape2} />
                 </ScrollTrigger>
 
                 <ScrollTrigger
@@ -212,22 +181,9 @@ export default function Introduction() {
                     initialThresholdValue={0}
                     animationName="animation_slideUp100s1"
                     section={0}
-                    defaultClassname={styles.shapeContainer2}
+                    defaultClassname={styles.shapeContainer3}
                 >
-                    <Image
-                        height={100}
-                        width={100}
-                        src={'/assets/background/shapes/box-d5e4e8.svg'}
-                        alt="dot matrix"
-                        className={styles.boxShape}
-                    />
-                    <Image
-                        height={86}
-                        width={86}
-                        src={'/assets/background/shapes/4-dot-matrix.svg'}
-                        alt="dot matrix"
-                        className={styles.dotMatrix}
-                    />
+                    <DotMatrixAndBox transformStyle={styles.shape3} />
                 </ScrollTrigger>
             </div>
         </div>
