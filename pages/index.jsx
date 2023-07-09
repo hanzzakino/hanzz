@@ -17,7 +17,6 @@ export default function Home() {
         <div>
             <Head>
                 <title>Hanz Aquino</title>
-                <link rel="icon" href="/favicon.svg" />
             </Head>
             {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>
