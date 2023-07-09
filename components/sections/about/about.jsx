@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import ScrollTrigger from '../../shared/scrollTrigger'
+import { secondaryFont } from '../../../utils/googleFonts'
 
 export default function About() {
     const { theme, setCurrentSection } = useSettingsContext()
@@ -43,7 +44,9 @@ export default function About() {
                 section={1}
                 defaultClassname={styles.titleContainer}
             >
-                <h1 className={styles.title}>About me</h1>
+                <h1 className={styles.title + ' ' + secondaryFont.className}>
+                    About me
+                </h1>
             </ScrollTrigger>
             <ScrollTrigger
                 animationName="animation_slideUp100s14"

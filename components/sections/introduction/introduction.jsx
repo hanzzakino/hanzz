@@ -18,6 +18,8 @@ import {
     Circle,
 } from '../../shared/shapes'
 
+import { secondaryFont } from '../../../utils/googleFonts'
+
 export default function Introduction() {
     const { theme, setCurrentSection } = useSettingsContext()
     return (
@@ -83,7 +85,15 @@ export default function Introduction() {
                         animationName="animation_slideLeft100s15"
                         section={0}
                     >
-                        <h1 className={styles.group1_msg1}>Hi! I'm</h1>
+                        <h1
+                            className={
+                                styles.group1_msg1 +
+                                ' ' +
+                                secondaryFont.className
+                            }
+                        >
+                            Hi! I'm
+                        </h1>
                     </ScrollTrigger>
 
                     <ScrollTrigger
@@ -92,7 +102,11 @@ export default function Introduction() {
                     >
                         <h1
                             className={
-                                styles.accent1 + ' ' + styles.group1_msg2
+                                styles.accent1 +
+                                ' ' +
+                                styles.group1_msg2 +
+                                ' ' +
+                                secondaryFont.className
                             }
                         >
                             Hanz Aquino

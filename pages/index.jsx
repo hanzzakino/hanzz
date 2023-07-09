@@ -10,7 +10,7 @@ import SectionIndicator from '../components/shared/sectionIndicator'
 import Projects from '../components/sections/works/projects'
 import Footer from '../components/sections/footer/footer'
 
-export default function Home() {
+export default function Home({ query }) {
     const { theme } = useSettingsContext()
 
     return (
@@ -31,7 +31,20 @@ export default function Home() {
                 <About />
                 <Projects />
                 <Footer />
+                <p hidden>{JSON.stringify(query)}</p>
             </main>
         </div>
     )
+}
+
+export async function getServerSideProps({ query }) {
+    try {
+        return {
+            props: {
+                query: JSON.parse(JSON.stringify(query)),
+            },
+        }
+    } catch (e) {
+        console.log('getServerSideProps error >>>', e)
+    }
 }

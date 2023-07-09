@@ -17,8 +17,6 @@ body {
     box-sizing: border-box;
 }
 :root {
-    --secondary-font: 'Poppins', sans-serif;
-
     --accent-color-1: #20bde8;
     --accent-color-2: #f15244;
 

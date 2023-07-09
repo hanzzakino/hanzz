@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 import FeaturedProject from './featuredProject'
 import OtherProject from './otherProject'
 import ScrollTrigger from '../../shared/scrollTrigger'
+import { secondaryFont } from '../../../utils/googleFonts'
 
 const featuredProjectsList = [
     {
@@ -98,7 +99,9 @@ const featuredProjects = () => {
                 animationName="animation_slideUp100s1"
                 defaultClassname={styles.titleContainer}
             >
-                <h1 className={styles.title}>My Projects</h1>
+                <h1 className={styles.title + ' ' + secondaryFont.className}>
+                    My Projects
+                </h1>
             </ScrollTrigger>
             <ScrollTrigger
                 section={2}

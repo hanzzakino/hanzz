@@ -2,10 +2,14 @@ import '../styles/globals.css'
 import '../styles/animations.css'
 import { SettingsContextWrapper } from '../context/SettingsContext.js'
 
+import { primaryFont } from '../utils/googleFonts'
+
 function MyApp({ Component, pageProps }) {
     return (
         <SettingsContextWrapper>
-            <Component {...pageProps} />
+            <main className={primaryFont.className}>
+                <Component {...pageProps} />
+            </main>
         </SettingsContextWrapper>
     )
 }
