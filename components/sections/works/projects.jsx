@@ -6,6 +6,14 @@ import FeaturedProject from './featuredProject'
 import OtherProject from './otherProject'
 import ScrollTrigger from '../../shared/scrollTrigger'
 import { secondaryFont } from '../../../utils/googleFonts'
+import {
+    Box,
+    Circle,
+    Curl2Circle,
+    Curl2CircleBox,
+    CurlyLine,
+    DotMatrix,
+} from '../../shared/shapes'
 
 const featuredProjectsList = [
     {
@@ -102,17 +110,38 @@ const featuredProjects = () => {
                 <h1 className={styles.title + ' ' + secondaryFont.className}>
                     My Projects
                 </h1>
+                <div className={styles.shapeContainer2}>
+                    <CurlyLine transformStyle={styles.shape2} />
+                </div>
             </ScrollTrigger>
             <ScrollTrigger
                 section={2}
                 animationName="animation_slideUp100s1"
                 defaultClassname={styles.subtitleContainer}
             >
+                <div className={styles.shapeContainer1}>
+                    <Circle transformStyle={styles.shape1} />
+                </div>
+
                 <h1 className={styles.subtitle}>
                     <strong>FEATURED</strong> PROJECTS
                 </h1>
             </ScrollTrigger>
             <div className={styles.projectsMainContainer}>
+                <ScrollTrigger
+                    section={2}
+                    animationName="animation_slideUp100s1"
+                    defaultClassname={styles.shapeContainer4a}
+                >
+                    <Curl2Circle transformStyle={styles.shape4a} />
+                </ScrollTrigger>
+                <ScrollTrigger
+                    section={2}
+                    animationName="animation_slideUp100s1"
+                    defaultClassname={styles.shapeContainer4b}
+                >
+                    <Curl2CircleBox transformStyle={styles.shape4b} />
+                </ScrollTrigger>
                 {featuredProjectsList.map((project, index) => (
                     <FeaturedProject
                         key={project.title + '__2000'}
@@ -135,6 +164,9 @@ const otherProjects = () => {
                 animationName="animation_slideUp100s1"
                 defaultClassname={styles.subtitleContainer}
             >
+                <div className={styles.shapeContainer3}>
+                    <Box transformStyle={styles.shape3} />
+                </div>
                 <h1 className={styles.subtitle}>
                     <strong>OTHER</strong> PROJECTS
                 </h1>

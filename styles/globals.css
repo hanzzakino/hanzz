@@ -8,8 +8,8 @@ html,
 body {
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans 3', 'Times New Roman', 'Inter', 'Montserrat',
-        Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 14px;
     scroll-behavior: smooth;
 }
@@ -72,21 +72,6 @@ p,
 ul {
     margin: 0;
 }
-
-/* width
-::-webkit-scrollbar {
-    width: 8px;
-} */
-/* Track */
-/* ::-webkit-scrollbar-track {
-    border-radius: 10px;
-} */
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-    background: var(--accent-color-1);
-    border-radius: 10px;
-    transition: 0.5s;
-} */
 
 ::-webkit-scrollbar {
     width: 16px;

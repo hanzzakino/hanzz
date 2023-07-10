@@ -5,6 +5,7 @@ import { useInView } from 'react-intersection-observer'
 import { useEffect, useState } from 'react'
 import ScrollTrigger from '../../shared/scrollTrigger'
 import { secondaryFont } from '../../../utils/googleFonts'
+import { Circle, Curl2Circle, CurlyLine, DotMatrix } from '../../shared/shapes'
 
 export default function About() {
     const { theme, setCurrentSection } = useSettingsContext()
@@ -47,12 +48,18 @@ export default function About() {
                 <h1 className={styles.title + ' ' + secondaryFont.className}>
                     About me
                 </h1>
+                <div className={styles.shapeContainer2}>
+                    <CurlyLine transformStyle={styles.shape2} />
+                </div>
             </ScrollTrigger>
             <ScrollTrigger
                 animationName="animation_slideUp100s14"
                 section={1}
                 defaultClassname={styles.subtitleContainer}
             >
+                <div className={styles.shapeContainer1}>
+                    <Circle transformStyle={styles.shape1} />
+                </div>
                 <h1 className={styles.subtitle}>
                     LET ME <strong>INTRODUCE</strong> MYSELF
                 </h1>
@@ -82,6 +89,9 @@ export default function About() {
                 <h1 className={styles.subtitle}>
                     <strong>TECHNOLOGIES</strong> I WORK WITH
                 </h1>
+                <div className={styles.shapeContainer3}>
+                    <DotMatrix transformStyle={styles.shape3} />
+                </div>
             </ScrollTrigger>
             <ScrollTrigger
                 animationName="animation_slideUp100s18"

@@ -54,3 +54,18 @@
     width: 130px;
     height: 130px;
 }
+.curlyLineShape {
+    position: relative;
+    width: 160px;
+    height: 16px;
+}
+.boxShape {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.dotMatrixShape {
+    position: relative;
+    width: 86px;
+    height: 86px;
+}

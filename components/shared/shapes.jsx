@@ -84,3 +84,42 @@ export function Circle({ transformStyle, scale = 1 }) {
         </div>
     )
 }
+export function CurlyLine({ transformStyle }) {
+    return (
+        <div className={styles.shapeContainer + ' ' + transformStyle}>
+            <Image
+                height={16}
+                width={160}
+                src={'/assets/background/shapes/curly-line.svg'}
+                alt="dot matrix"
+                className={styles.curlyLineShape}
+            />
+        </div>
+    )
+}
+export function Box({ transformStyle }) {
+    return (
+        <div className={styles.shapeContainer + ' ' + transformStyle}>
+            <Image
+                height={100}
+                width={100}
+                src={'/assets/background/shapes/box-d5e4e8.svg'}
+                alt="dot matrix"
+                className={styles.boxShape}
+            />
+        </div>
+    )
+}
+export function DotMatrix({ transformStyle }) {
+    return (
+        <div className={styles.shapeContainer + ' ' + transformStyle}>
+            <Image
+                height={86}
+                width={86}
+                src={'/assets/background/shapes/4-dot-matrix.svg'}
+                alt="dot matrix"
+                className={styles.dotMatrixShape}
+            />
+        </div>
+    )
+}
