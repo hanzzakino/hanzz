@@ -60,11 +60,6 @@ export default function About() {
                 defaultClassname={styles.intro}
             >
 
-My name is Hanz Christian Aquino, a Computer Engineer 
-
-
-
-
                 <p>
                     My Name is <strong>Hanz Christian Aquino</strong>, a
                     <strong> Computer Engineer</strong> with a passion for programming and software development. <br />My journey began in <strong>2017</strong> when my curiosity about how computers work led me to explore programming. The idea of instructing a computer to perform specific tasks fascinated me. I thrive on the challenge of solving analytical and mathematical problems, and programming became my perfect tool to do so.
