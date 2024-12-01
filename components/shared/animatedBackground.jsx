@@ -14,7 +14,7 @@ export default function AnimatedBackground({
     const [animatedShapes, setAnimatedShapes] = useState()
 
     useEffect(() => {
-        setShapeNumber(Math.ceil((screenWidth / 32) * 2))
+        setShapeNumber(Math.ceil((screenWidth / 256) * 2))
     }, [windowAvailable])
 
     useEffect(() => {

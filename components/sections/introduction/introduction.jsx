@@ -103,18 +103,16 @@ export default function Introduction() {
                         section={0}
                     >
                         <p className={styles.group1_msg3}>
-                            I'm a <b>Computer Engineer / Programmer </b>
-                            and I convert{' '}
-                            <span className={styles.accent2}>
-                                ideas
-                            </span> and{' '}
+                            I'm a <b>Software Engineer, </b>
+                            transforming{' '}
+                            <span className={styles.accent2}>ideas </span>and{' '}
                             <span className={styles.accent2}>creativity</span>{' '}
-                            into a piece of technology.
+                            into innovative technological solutions.
                         </p>
-                        <p className={styles.group1_msg4}>
+                        {/* <p className={styles.group1_msg4}>
                             Also, a&nbsp;
                             <nobr className={styles.multiTalent}></nobr>
-                        </p>
+                        </p> */}
                     </ScrollTrigger>
                     <ScrollTrigger
                         animationName="animation_popUps2"

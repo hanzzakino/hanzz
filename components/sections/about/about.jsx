@@ -10,19 +10,22 @@ export default function About() {
 
     const skillList = {
         programming: [
-            { name: 'Java', iconUrl: '/assets/logo/tech/java3.svg' },
             { name: 'Python', iconUrl: '/assets/logo/tech/python.svg' },
-            { name: 'C++', iconUrl: '/assets/logo/tech/cpp.svg' },
+            { name: 'PHP', iconUrl: '/assets/logo/tech/php.svg' },
             {
                 name: 'JavaScript ES6',
                 iconUrl: '/assets/logo/tech/javascript.svg',
             },
-            { name: 'Visual Basic', iconUrl: '/assets/logo/tech/vb.svg' },
+            { name: 'Java', iconUrl: '/assets/logo/tech/java3.svg' },
+            { name: 'C++', iconUrl: '/assets/logo/tech/cpp.svg' },
+            // { name: 'Visual Basic', iconUrl: '/assets/logo/tech/vb.svg' },
         ],
         webFrameworks: [
+            { name: 'Laravel', iconUrl: '/assets/logo/tech/laravel.svg' },
             { name: 'NextJS', iconUrl: '/assets/logo/tech/nextjs.svg' },
             { name: 'ReactJS', iconUrl: '/assets/logo/tech/reactjs.svg' },
             { name: 'p5.js', iconUrl: '/assets/logo/tech/p5js2.svg' },
+            { name: 'Tailwind', iconUrl: '/assets/logo/tech/tailwind.svg' },
             { name: 'Bootstrap', iconUrl: '/assets/logo/tech/bootstrap.svg' },
         ],
         desktopFrameworks: [
