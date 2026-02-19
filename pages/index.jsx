@@ -31,6 +31,10 @@ export default function Home() {
                 <meta property="og:type" content="website" />
                 <meta property="og:site_name" content="Hanz Aquino Portfolio" />
                 <meta property="og:url" content="https://hanzz.vercel.app/" />
+                <meta
+                    name="google-site-verification"
+                    content="CSB-8JPObaG9kZq1m4lRlUCKAjzzhZiVf_7fZTJ7_tU"
+                />
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
