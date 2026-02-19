@@ -16,8 +16,34 @@ export default function Home() {
     return (
         <div>
             <Head>
-                <title>Hanz Aquino</title>
-                <link rel="icon" href="/favicon.svg" />
+                <title>Hanz Aquino — Frontend Developer</title>
+                <meta
+                    name="description"
+                    content="Hanz Aquino — portfolio, projects, and contact."
+                />
+                <meta name="robots" content="index, follow" />
+                <link rel="canonical" href="https://hanzz.vercel.app/" />
+                <meta property="og:title" content="Hanz Aquino" />
+                <meta
+                    property="og:description"
+                    content="Portfolio and projects by Hanz Aquino."
+                />
+                <meta property="og:type" content="website" />
+                <meta property="og:site_name" content="Hanz Aquino Portfolio" />
+                <meta property="og:url" content="https://hanzz.vercel.app/" />
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify({
+                            '@context': 'https://schema.org',
+                            '@type': 'Person',
+                            name: 'Hanz Aquino',
+                            url: 'https://hanzz.vercel.app',
+                            sameAs: ['https://github.com/hanzzakino'],
+                            jobTitle: 'Software Developer',
+                        }),
+                    }}
+                />
             </Head>
             {/* <Navbar /> */}
             <main className={styles.mainContainer + ' ' + theme}>

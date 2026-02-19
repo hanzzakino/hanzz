@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://hanzz.vercel.app
+
+# Sitemaps
+Sitemap: https://hanzz.vercel.app/sitemap.xml
